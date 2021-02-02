@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GameEngine"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\assimp-5.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/viktor/CLionProjects/GameEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/viktor/CLionProjects/GameEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/viktor/CLionProjects/GameEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GameEngine">
+				<Option output="/home/viktor/CLionProjects/GameEngine/cmake-build-debug/GameEngine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/viktor/CLionProjects/GameEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 GameEngine"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GameEngine/fast">
+				<Option output="/home/viktor/CLionProjects/GameEngine/cmake-build-debug/GameEngine" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/viktor/CLionProjects/GameEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 GameEngine/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/viktor/CLionProjects/GameEngine/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/GameEngine.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/GameEngine.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Importer.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Importer.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/PhongShadedObject.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/PhongShadedObject.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/WindowHandling/GLwindow.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/WindowHandling/GLwindow.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/main.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/../../../../usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/../../../../usr/local/lib/cmake/assimp-5.0/assimpConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/../../../../usr/local/lib/cmake/assimp-5.0/assimpConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/../../../../usr/local/lib/cmake/assimp-5.0/assimpTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/../../../../usr/local/lib/cmake/assimp-5.0/assimpTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\assimp-5.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
