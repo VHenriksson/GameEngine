@@ -28,6 +28,7 @@ struct glContainer {
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     };
     void bindVAO(){
+        std::cout << "Binding " << vao << std::endl;
         glBindVertexArray(vao);
     };
     void bindVBO(){

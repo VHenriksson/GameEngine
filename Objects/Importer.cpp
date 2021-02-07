@@ -38,12 +38,12 @@ void Importer::processMeshes(const aiNode *node) {
             aiMaterial *material = scene->mMaterials[mesh->mMaterialIndex];
             aiString str;
             material->GetTexture(aiTextureType_DIFFUSE,0,&str);
-            std::string textureName = aiStringToString(str);
-            if(materials.notSet(textureName)){
-                materials.set(textureName,Material(material));
+            std::size_t textureReference = getHash(aiStringToString(str));
+            if(materials.notSet(textureReference)){
+                materials.set(textureReference,Material(material));
             }
-            textureMesh.setPointerToMaterial(getHash(textureName));
-            textureMeshes.push_back(GLMeshTexture(mesh));
+            textureMesh.setPointerToMaterial(textureReference);
+            textureMeshes.push_back(textureMesh);
         } else {
             colourMeshes.push_back(GLMeshColour(mesh));
         }

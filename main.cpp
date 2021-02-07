@@ -22,15 +22,19 @@ TexturePhongShader shader = TexturePhongShader("/home/viktor/CLionProjects/GameE
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
-    Importer i = Importer("../sphere2.obj");
+    Importer i = Importer("../spheres.obj");
     TextureList materials = i.getTextures();
     std::vector<GLMeshTexture> object = i.getMeshes();
     for(int i = 0; i < object.size(); i++){
         object[i].setupMesh();
     }
     std::cout << object.size() << std::endl;
+
+    glBindTexture(GL_TEXTURE_2D, 76);
     while(1){
-        shader.draw(&object[0]);
+        for(int i = 0; i < object.size(); i++){
+            shader.draw(&object[i],materials.get(object[i].getMaterial()));
+        }
         w.updateWindow();
     }
     return 0;

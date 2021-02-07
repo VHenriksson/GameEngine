@@ -8,6 +8,7 @@
 
 #include <string>
 #include "../Objects/GLMesh/GLMeshBase.h"
+#include "../Objects/Materials/Material.h"
 
 class ShaderProgramBase {
     std::string source;
@@ -24,11 +25,12 @@ public:
 
     void createFragmentShader();
 
-    void draw(GLMeshBase* object);
+//    void draw(GLMeshBase* object, Material material);
 
     virtual void setSpecifics() = 0;
 
     //void draw(std::shared_ptr<GLMeshBase> object);
+    void draw(GLMeshBase *object, Material material);
 };
 
 

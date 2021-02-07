@@ -7,6 +7,7 @@
 #include <memory>
 #include "ShaderProgramBase.h"
 #include "ShaderLoader.h"
+#include "../Objects/Materials/Material.h"
 
 ShaderProgramBase::ShaderProgramBase(std::string shaderSource) {
     source = shaderSource;
@@ -38,12 +39,13 @@ void ShaderProgramBase::createFragmentShader() {
     glAttachShader(shaderID, fragmentShader);
 }
 
-void ShaderProgramBase::draw(GLMeshBase* object) {
+void ShaderProgramBase::draw(GLMeshBase* object, Material material) {
     glClearColor(0, 0, 0.1, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glUseProgram(shaderID);
     setSpecifics();
     object->bind();
+    material.bind();
     object->draw();
 
 }

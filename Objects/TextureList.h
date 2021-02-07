@@ -24,6 +24,9 @@ public:
     bool notSet(std::string textureName){
         return (this->find(getHash(textureName)) == this->end());
     }
+    bool notSet(std::size_t textureReference){
+        return (this->find(textureReference) == this->end());
+    }
 };
 
 

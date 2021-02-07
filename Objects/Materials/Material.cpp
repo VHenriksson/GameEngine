@@ -34,6 +34,10 @@ Material::Material(aiMaterial* material) {
     std::cout << "Material created with id " << colourTextureReference << std::endl;
 }
 
+void Material::bind() {
+    glBindTexture(GL_TEXTURE_2D, colourTextureReference);
+}
+
 std::string aiStringToString(aiString s){
     std::string returnString;
     for(int i = 0; i < s.length; i++){

@@ -47,6 +47,7 @@ CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o: ../Shading/ShaderLoader.cp
 CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o: ../Shading/ShaderLoader.h
 
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Objects/GLMesh/GLMeshBase.h
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderLoader.h
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderProgramBase.cpp
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderProgramBase.h

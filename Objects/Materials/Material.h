@@ -23,6 +23,7 @@ class Material {
     unsigned int bumpMapReference;
 public:
     Material(aiMaterial* material);
+    void bind();
 
 };
 

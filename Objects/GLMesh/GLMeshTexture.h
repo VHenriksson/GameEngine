@@ -28,6 +28,8 @@ public:
     std::vector<float> getData();
 
     std::vector<unsigned int> getFaces();
+
+    size_t getMaterial();
 };
 
 

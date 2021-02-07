@@ -48,6 +48,7 @@ CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
