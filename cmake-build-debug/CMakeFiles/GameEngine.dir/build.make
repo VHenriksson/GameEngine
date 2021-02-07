@@ -233,18 +233,44 @@ CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp -o CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.s
 
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o: ../Shading/ShaderProgram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o -c /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.cpp
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderProgramBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o -c /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp
 
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.cpp > CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.i
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp > CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.i
 
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.cpp -o CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.s
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp -o CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.s
+
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Shading/TexturePhongShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o -c /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp
+
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp > CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.i
+
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp -o CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.s
+
+CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o: ../Objects/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o -c /home/viktor/CLionProjects/GameEngine/Objects/Scene.cpp
+
+CMakeFiles/GameEngine.dir/Objects/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Objects/Scene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Objects/Scene.cpp > CMakeFiles/GameEngine.dir/Objects/Scene.cpp.i
+
+CMakeFiles/GameEngine.dir/Objects/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Objects/Scene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Objects/Scene.cpp -o CMakeFiles/GameEngine.dir/Objects/Scene.cpp.s
 
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
@@ -260,7 +286,9 @@ GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/WindowHandling/GLwindow.cpp.o" \
 "CMakeFiles/GameEngine.dir/WindowHandling/GLContext.cpp.o" \
 "CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o" \
-"CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o"
+"CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o" \
+"CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o" \
+"CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o"
 
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
@@ -277,11 +305,13 @@ GameEngine: CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/WindowHandling/GLwindow.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/WindowHandling/GLContext.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o
-GameEngine: CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/build.make
 GameEngine: /usr/lib/x86_64-linux-gnu/libGLEW.so
 GameEngine: CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable GameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable GameEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

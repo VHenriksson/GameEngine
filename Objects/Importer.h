@@ -13,11 +13,11 @@
 #include "GLMesh/GLMeshBase.h"
 #include "GLMesh/GLMeshTexture.h"
 #include "GLMesh/GLMeshColour.h"
-#include "Materials/Material.h"
+#include "TextureList.h"
 
 class Importer {
     const aiScene *scene;
-    std::unordered_map<unsigned int,Material> materials;
+    TextureList materials;
     std::vector<GLMeshTexture> textureMeshes;
     std::vector<GLMeshColour> colourMeshes;
 
@@ -27,7 +27,9 @@ class Importer {
 
 public:
     Importer(std::string source);
-    std::vector<float> getMesh();
+    GLMeshTexture getMesh();
+    std::vector<GLMeshTexture> getMeshes();
+    TextureList getTextures();
 
     std::vector<unsigned int> getFaces();
 };

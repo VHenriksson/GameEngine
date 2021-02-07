@@ -17,15 +17,6 @@ Importer::Importer(std::string source) {
     }
     processNode(scene->mRootNode);
     std::cout << "Texture Meshes:" << std::endl;
-    for(GLMeshTexture t : textureMeshes){
-        t.setupMesh();
-        t.print();
-    }
-    std::cout << "Colour Meshes:" << std::endl;
-    for(GLMeshColour t : colourMeshes){
-        t.print();
-    }
-
 }
 
 void Importer::processNode(aiNode *node)
@@ -43,33 +34,36 @@ void Importer::processMeshes(const aiNode *node) {
     {
         aiMesh *mesh = scene->mMeshes[node->mMeshes[i]];
         if (mesh->mTextureCoords[0]) {
-            textureMeshes.push_back(GLMeshTexture(mesh));
-            /*
-            if(!materials[mesh->mMaterialIndex]){
-
-            }
+            GLMeshTexture textureMesh = GLMeshTexture(mesh);
             aiMaterial *material = scene->mMaterials[mesh->mMaterialIndex];
-            std::cout << material->GetName() << std::endl;
-            std::cout << mesh->mMaterialIndex << std::endl;
             aiString str;
-            material->GetTexture(aiTextureType_DIFFUSE, 0, &str);
-            material->GetTexture(aiTextureType_NONE, 0, &str);
-            std::cout << material << std::endl;
-            std::cout << str.C_Str() << std::endl;
-            std::cout << "Hello" << std::endl;
-             */
+            material->GetTexture(aiTextureType_DIFFUSE,0,&str);
+            std::string textureName = aiStringToString(str);
+            if(materials.notSet(textureName)){
+                materials.set(textureName,Material(material));
+            }
+            textureMesh.setPointerToMaterial(getHash(textureName));
+            textureMeshes.push_back(GLMeshTexture(mesh));
         } else {
             colourMeshes.push_back(GLMeshColour(mesh));
         }
     }
 }
 
-std::vector<float> Importer::getMesh() {
-    GLMeshTexture t = textureMeshes[0];
-    return t.getData();
+GLMeshTexture Importer::getMesh() {
+    return textureMeshes[0];
+//    return t.getData();
 }
 
 std::vector<unsigned int> Importer::getFaces() {
     GLMeshTexture t = textureMeshes[0];
     return t.getFaces();
+}
+
+std::vector<GLMeshTexture> Importer::getMeshes() {
+    return textureMeshes;
+}
+
+TextureList Importer::getTextures() {
+    return materials;
 }

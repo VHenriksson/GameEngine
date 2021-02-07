@@ -39,3 +39,11 @@ std::vector<float> GLMeshTexture::getData() {
 std::vector<unsigned int> GLMeshTexture::getFaces() {
     return faceIndices;
 }
+
+void GLMeshTexture::prepareForDraw() {
+    glBindTexture(GL_TEXTURE_2D, 2);
+}
+
+void GLMeshTexture::setPointerToMaterial(std::size_t pointer) {
+    pointerToMaterial = pointer;
+}

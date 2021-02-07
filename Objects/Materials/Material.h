@@ -8,6 +8,10 @@
 
 #include <string>
 #include <glm/vec3.hpp>
+#include <assimp/material.h>
+#include <functional>
+
+std::string aiStringToString(aiString s);
 
 class Material {
     std::string id;
@@ -17,7 +21,9 @@ class Material {
     glm::vec3 specularConstant;
     unsigned int colourTextureReference;
     unsigned int bumpMapReference;
-    Material();
+public:
+    Material(aiMaterial* material);
+
 };
 
 

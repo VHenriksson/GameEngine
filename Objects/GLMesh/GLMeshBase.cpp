@@ -64,4 +64,14 @@ void GLMeshBase::print() {
     }
 }
 
+void GLMeshBase::bind() {
+    glData.bindVAO();
+}
+
+void GLMeshBase::draw() {
+    prepareForDraw();
+    glDrawElements(GL_TRIANGLES, faceIndices.size(), GL_UNSIGNED_INT, 0);
+}
+
+
 

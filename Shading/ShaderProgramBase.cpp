@@ -4,10 +4,11 @@
 
 #include <GL/glew.h>
 #include <stdexcept>
-#include "ShaderProgram.h"
+#include <memory>
+#include "ShaderProgramBase.h"
 #include "ShaderLoader.h"
 
-ShaderProgram::ShaderProgram(std::string shaderSource) {
+ShaderProgramBase::ShaderProgramBase(std::string shaderSource) {
     source = shaderSource;
     createVertexShader();
     createFragmentShader();
@@ -17,7 +18,7 @@ ShaderProgram::ShaderProgram(std::string shaderSource) {
     glDeleteShader(fragmentShader);
 }
 
-void ShaderProgram::createVertexShader() {
+void ShaderProgramBase::createVertexShader() {
     std::string vSource = ShaderLoader::load(source + ".vert");
     const char* vertexSource = vSource.c_str();
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -27,7 +28,7 @@ void ShaderProgram::createVertexShader() {
     glAttachShader(shaderID, vertexShader);
 }
 
-void ShaderProgram::createFragmentShader() {
+void ShaderProgramBase::createFragmentShader() {
     std::string fSource = ShaderLoader::load(source + ".frag");
     const char* fragmentSource = fSource.c_str();
     fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
@@ -37,16 +38,17 @@ void ShaderProgram::createFragmentShader() {
     glAttachShader(shaderID, fragmentShader);
 }
 
-void ShaderProgram::draw() {
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+void ShaderProgramBase::draw(std::shared_ptr<GLMeshBase> object) {
+    glClearColor(0, 0, 0.1, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glUseProgram(shaderID);
-    glBindVertexArray(1);
-//    glBindTexture(GL_TEXTURE_2D, textureId);
-    glDrawElements(GL_TRIANGLES, 1000, GL_UNSIGNED_INT, 0);
+    setSpecifics();
+    object->bind();
+    object->draw();
+
 }
 
-static void ShaderProgram::testShaderCompilation(unsigned int shader) {
+void ShaderProgramBase::testShaderCompilation(unsigned int shader) {
     GLint vShaderCompiled = GL_TRUE;
     char errorLog[512];
     glGetShaderiv(shader, GL_COMPILE_STATUS, &vShaderCompiled );
@@ -54,6 +56,7 @@ static void ShaderProgram::testShaderCompilation(unsigned int shader) {
     {
         glGetShaderInfoLog(shader, 512, nullptr, &errorLog[0]);
         glDeleteShader(shader); // Don't leak the shader
-        throw std::runtime_error( "Unable to compile shader! Shader ID: " + std::to_string(*shader) + ". Shaderlog:\n" + errorLog);
+        throw std::runtime_error( "Unable to compile shader! Shader ID: " + std::to_string(shader) + ". Shaderlog:\n" + errorLog);
     }
 }
+

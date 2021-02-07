@@ -31,7 +31,7 @@ GLContext::GLContext(SDL_Window *window) {
         throw std::runtime_error("Unable to set VSync! SDL Error: " + std::string(SDL_GetError()));
 
     }
-    std::cout << "GL context " << this << " sucessfully created" << std::endl;
+    glEnable(GL_DEPTH_TEST);
 }
 
 

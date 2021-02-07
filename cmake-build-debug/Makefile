@@ -359,6 +359,33 @@ Objects/PhongShadedObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.s
 .PHONY : Objects/PhongShadedObject.cpp.s
 
+Objects/Scene.o: Objects/Scene.cpp.o
+
+.PHONY : Objects/Scene.o
+
+# target to build an object file
+Objects/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o
+.PHONY : Objects/Scene.cpp.o
+
+Objects/Scene.i: Objects/Scene.cpp.i
+
+.PHONY : Objects/Scene.i
+
+# target to preprocess a source file
+Objects/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Scene.cpp.i
+.PHONY : Objects/Scene.cpp.i
+
+Objects/Scene.s: Objects/Scene.cpp.s
+
+.PHONY : Objects/Scene.s
+
+# target to generate assembly for a file
+Objects/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Scene.cpp.s
+.PHONY : Objects/Scene.cpp.s
+
 Shading/ShaderLoader.o: Shading/ShaderLoader.cpp.o
 
 .PHONY : Shading/ShaderLoader.o
@@ -386,32 +413,59 @@ Shading/ShaderLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.s
 .PHONY : Shading/ShaderLoader.cpp.s
 
-Shading/ShaderProgram.o: Shading/ShaderProgram.cpp.o
+Shading/ShaderProgramBase.o: Shading/ShaderProgramBase.cpp.o
 
-.PHONY : Shading/ShaderProgram.o
+.PHONY : Shading/ShaderProgramBase.o
 
 # target to build an object file
-Shading/ShaderProgram.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o
-.PHONY : Shading/ShaderProgram.cpp.o
+Shading/ShaderProgramBase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o
+.PHONY : Shading/ShaderProgramBase.cpp.o
 
-Shading/ShaderProgram.i: Shading/ShaderProgram.cpp.i
+Shading/ShaderProgramBase.i: Shading/ShaderProgramBase.cpp.i
 
-.PHONY : Shading/ShaderProgram.i
+.PHONY : Shading/ShaderProgramBase.i
 
 # target to preprocess a source file
-Shading/ShaderProgram.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.i
-.PHONY : Shading/ShaderProgram.cpp.i
+Shading/ShaderProgramBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.i
+.PHONY : Shading/ShaderProgramBase.cpp.i
 
-Shading/ShaderProgram.s: Shading/ShaderProgram.cpp.s
+Shading/ShaderProgramBase.s: Shading/ShaderProgramBase.cpp.s
 
-.PHONY : Shading/ShaderProgram.s
+.PHONY : Shading/ShaderProgramBase.s
 
 # target to generate assembly for a file
-Shading/ShaderProgram.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.s
-.PHONY : Shading/ShaderProgram.cpp.s
+Shading/ShaderProgramBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.s
+.PHONY : Shading/ShaderProgramBase.cpp.s
+
+Shading/TexturePhongShader.o: Shading/TexturePhongShader.cpp.o
+
+.PHONY : Shading/TexturePhongShader.o
+
+# target to build an object file
+Shading/TexturePhongShader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o
+.PHONY : Shading/TexturePhongShader.cpp.o
+
+Shading/TexturePhongShader.i: Shading/TexturePhongShader.cpp.i
+
+.PHONY : Shading/TexturePhongShader.i
+
+# target to preprocess a source file
+Shading/TexturePhongShader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.i
+.PHONY : Shading/TexturePhongShader.cpp.i
+
+Shading/TexturePhongShader.s: Shading/TexturePhongShader.cpp.s
+
+.PHONY : Shading/TexturePhongShader.s
+
+# target to generate assembly for a file
+Shading/TexturePhongShader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.s
+.PHONY : Shading/TexturePhongShader.cpp.s
 
 WindowHandling/GLContext.o: WindowHandling/GLContext.cpp.o
 
@@ -527,12 +581,18 @@ help:
 	@echo "... Objects/PhongShadedObject.o"
 	@echo "... Objects/PhongShadedObject.i"
 	@echo "... Objects/PhongShadedObject.s"
+	@echo "... Objects/Scene.o"
+	@echo "... Objects/Scene.i"
+	@echo "... Objects/Scene.s"
 	@echo "... Shading/ShaderLoader.o"
 	@echo "... Shading/ShaderLoader.i"
 	@echo "... Shading/ShaderLoader.s"
-	@echo "... Shading/ShaderProgram.o"
-	@echo "... Shading/ShaderProgram.i"
-	@echo "... Shading/ShaderProgram.s"
+	@echo "... Shading/ShaderProgramBase.o"
+	@echo "... Shading/ShaderProgramBase.i"
+	@echo "... Shading/ShaderProgramBase.s"
+	@echo "... Shading/TexturePhongShader.o"
+	@echo "... Shading/TexturePhongShader.i"
+	@echo "... Shading/TexturePhongShader.s"
 	@echo "... WindowHandling/GLContext.o"
 	@echo "... WindowHandling/GLContext.i"
 	@echo "... WindowHandling/GLContext.s"

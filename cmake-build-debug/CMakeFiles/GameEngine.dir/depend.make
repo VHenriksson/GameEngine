@@ -16,6 +16,7 @@ CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o: ../Objects/GLMesh/
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o: ../Objects/GLMesh/GLMeshTexture.cpp
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o: ../Objects/GLMesh/GLMeshTexture.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o: ../Objects/GLMesh/ImportedMesh.h
+CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o: ../Objects/Materials/Material.h
 
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Objects/GLMesh/GLMeshBase.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Objects/GLMesh/ImportedMesh.cpp
@@ -25,23 +26,38 @@ CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/GLMesh/GLMeshBase.h
 CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/GLMesh/GLMeshColour.h
 CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/GLMesh/GLMeshTexture.h
 CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/GLMesh/ImportedMesh.h
+CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/GLMesh/hashFunction.h
 CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/Importer.cpp
 CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/Importer.h
 CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/Materials/Material.h
+CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o: ../Objects/TextureList.h
 
 CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o: ../Objects/Materials/Material.cpp
 CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o: ../Objects/Materials/Material.h
+CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o: ../Textures/stb_image.h
 
 CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.o: ../Objects/GLMesh/GLMeshBase.h
 CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.o: ../Objects/PhongShadedObject.cpp
 CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.o: ../Objects/PhongShadedObject.h
 
+CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o: ../Objects/Scene.cpp
+CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o: ../Objects/Scene.h
+
 CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o: ../Shading/ShaderLoader.cpp
 CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o: ../Shading/ShaderLoader.h
 
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o: ../Shading/ShaderLoader.h
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o: ../Shading/ShaderProgram.cpp
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o: ../Shading/ShaderProgram.h
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Objects/GLMesh/GLMeshBase.h
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderLoader.h
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderProgramBase.cpp
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderProgramBase.h
+
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Objects/GLMesh/GLMeshBase.h
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Objects/GLMesh/GLMeshTexture.h
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Objects/GLMesh/ImportedMesh.h
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Objects/Materials/Material.h
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Shading/ShaderProgramBase.h
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Shading/TexturePhongShader.cpp
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o: ../Shading/TexturePhongShader.h
 
 CMakeFiles/GameEngine.dir/WindowHandling/GLContext.cpp.o: ../WindowHandling/GLContext.cpp
 CMakeFiles/GameEngine.dir/WindowHandling/GLContext.cpp.o: ../WindowHandling/GLContext.h
@@ -54,11 +70,13 @@ CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/GLMesh/GLMeshBase.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/GLMesh/GLMeshColour.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/GLMesh/GLMeshTexture.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/GLMesh/ImportedMesh.h
+CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/GLMesh/hashFunction.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/Importer.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/Materials/Material.h
+CMakeFiles/GameEngine.dir/main.cpp.o: ../Objects/TextureList.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../Shading/ShaderLoader.h
-CMakeFiles/GameEngine.dir/main.cpp.o: ../Shading/ShaderProgram.h
-CMakeFiles/GameEngine.dir/main.cpp.o: ../Textures/stb_image.h
+CMakeFiles/GameEngine.dir/main.cpp.o: ../Shading/ShaderProgramBase.h
+CMakeFiles/GameEngine.dir/main.cpp.o: ../Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../WindowHandling/GLContext.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../WindowHandling/GLwindow.h
 CMakeFiles/GameEngine.dir/main.cpp.o: ../main.cpp

@@ -114,6 +114,9 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h">
 			<Option target="GameEngine"/>
 		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h">
+			<Option target="GameEngine"/>
+		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Importer.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
@@ -132,16 +135,31 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/PhongShadedObject.h">
 			<Option target="GameEngine"/>
 		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Scene.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Scene.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/TextureList.h">
+			<Option target="GameEngine"/>
+		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h">
 			<Option target="GameEngine"/>
 		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.cpp">
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.h">
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.cpp">

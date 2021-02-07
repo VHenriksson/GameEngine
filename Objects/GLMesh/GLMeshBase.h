@@ -6,6 +6,7 @@
 #define GAMEENGINE_GLMESHBASE_H
 
 #include <glm/glm.hpp>
+#include <iostream>
 #include <vector>
 #include <GL/glew.h>
 #include <GL/gl.h>
@@ -39,6 +40,8 @@ public:
     void initialize();
     void setupMesh();
     void print();
+    void bind();
+    void draw();
 private:
     glContainer glData;
     void makeVertices();
@@ -53,6 +56,8 @@ protected:
     std::vector<unsigned int> faceIndices;
     std::vector<material> materials;
     virtual void setMaterial() = 0;
+
+    virtual void prepareForDraw() = 0;
 };
 
 

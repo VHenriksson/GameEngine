@@ -17,6 +17,7 @@ CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.cpp
@@ -26,23 +27,38 @@ CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+ /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
 CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+ /home/viktor/CLionProjects/GameEngine/Textures/stb_image.h
 CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedObject.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedObject.h
+CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o
+ /home/viktor/CLionProjects/GameEngine/Objects/Scene.cpp
+ /home/viktor/CLionProjects/GameEngine/Objects/Scene.h
 CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
-CMakeFiles/GameEngine.dir/Shading/ShaderProgram.cpp.o
+CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.cpp
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.h
+ /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp
+ /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
+CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+ /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
+ /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp
+ /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/WindowHandling/GLContext.cpp.o
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.cpp
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.h
@@ -55,11 +71,13 @@ CMakeFiles/GameEngine.dir/main.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+ /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgram.h
- /home/viktor/CLionProjects/GameEngine/Textures/stb_image.h
+ /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
+ /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.h
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLwindow.h
  /home/viktor/CLionProjects/GameEngine/main.cpp
