@@ -20,6 +20,7 @@ class Material {
     glm::vec3 specularColour;
     glm::vec3 specularConstant;
     unsigned int colourTextureReference;
+    unsigned int normalTextureReference;
     unsigned int bumpMapReference;
 public:
     Material(aiMaterial* material);

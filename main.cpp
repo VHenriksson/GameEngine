@@ -32,6 +32,8 @@ int main() {
 
     glBindTexture(GL_TEXTURE_2D, 76);
     while(1){
+        glClearColor(0, 0, 0.1, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         for(int i = 0; i < object.size(); i++){
             shader.draw(&object[i],materials.get(object[i].getMaterial()));
         }

@@ -20,8 +20,7 @@ void GLMeshBase::setupMesh() {
 
 void GLMeshBase::makeFaces() {
     glData.bindEBO();
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, faceIndices.size() * sizeof(unsigned int),
-                 &faceIndices[0], GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, faceIndices.size() * sizeof(unsigned int), &faceIndices[0], GL_STATIC_DRAW);
 }
 
 void GLMeshBase::makeVertices() {

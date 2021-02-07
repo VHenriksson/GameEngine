@@ -15,6 +15,7 @@ class TexturePhongShader : public ShaderProgramBase {
     void setSpecifics() override;
     unsigned int sunPosUniform;
     glm::vec3 sunPos = glm::vec3(3,3,-100);
+    float t = 0;
 public:
     explicit TexturePhongShader(std::string name);
 };

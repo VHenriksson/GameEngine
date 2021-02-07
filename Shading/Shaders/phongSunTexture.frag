@@ -7,17 +7,22 @@ in vec2 TextureCoordinate;
 uniform vec3 sunPos;
 
 uniform sampler2D Texture;
+uniform sampler2D normalTexture;
+
 
 void main() {
+    vec3 normalOffset = texture(normalTexture, TextureCoordinate).rgb;
+//    vec3 Normal = Normal -
+
     float shininess = 3;
     vec3 phongVector = vec3(0.6,0.7,0.5);
 //    vec4 color = vec4(1,TextureCoordinate,1);
-    vec4 color = texture(Texture,TextureCoordinate);
-    vec4 ambientLightColor = vec4(0.2,0.2,0.2,0.2);
+    vec4 color = vec4(normalOffset,1);//texture(Texture,TextureCoordinate);
+    vec4 ambientLightColor = vec4(1,1,1,1);
 
 
     vec4 sunLightColor = vec4(1,1,1,1);
-    vec3 sunLightDirection = normalize(vec3(2,2,0));
+    vec3 sunLightDirection = normalize(sunPos);
     vec4 ambientLight = phongVector[0] * ambientLightColor;
 
     // Calculation of diffuse light

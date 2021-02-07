@@ -8,7 +8,8 @@
 
 void TexturePhongShader::setSpecifics() {
     glUniform3fv(sunPosUniform, 1, glm::value_ptr(sunPos));
-    sunPos = glm::vec3(random(),random(),random());
+    sunPos = glm::vec3(sin(t),1,cos(t));
+    t += 0.01;
     /*
     std::shared_ptr<GLMeshTexture> texObject = dynamic_cast<GLMeshBase>(object);
     if (std::MeshTexture* c = dynamic_cast<GLMeshTexture>(object.get()))

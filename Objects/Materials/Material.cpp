@@ -32,10 +32,29 @@ Material::Material(aiMaterial* material) {
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free((void *) data);
     std::cout << "Material created with id " << colourTextureReference << std::endl;
+    aiString normalMapLocation;
+    material->GetTexture(aiTextureType_NORMALS,0,&normalMapLocation);
+    std::cout << "Material loaded with " << aiStringToString(normalMapLocation) << std::endl;
+    fullPath = "/home/viktor/CLionProjects/GameEngine/" + aiStringToString(normalMapLocation) + ".jpg";
+    data = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
+    /*
+    for(int i = 0; i < width*height; i++){
+        std::cout << data[i];
+    }
+     */
+    glGenTextures(1, &normalTextureReference);
+    glBindTexture(GL_TEXTURE_2D, normalTextureReference);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    glGenerateMipmap(GL_TEXTURE_2D);
+    stbi_image_free((void *) data);
+    std::cout << "Normals created with id " << normalTextureReference << std::endl;
 }
 
 void Material::bind() {
+    glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, colourTextureReference);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, normalTextureReference);
 }
 
 std::string aiStringToString(aiString s){
