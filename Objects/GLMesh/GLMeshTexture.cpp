@@ -41,7 +41,8 @@ std::vector<unsigned int> GLMeshTexture::getFaces() {
 }
 
 void GLMeshTexture::prepareForDraw() {
-    glBindTexture(GL_TEXTURE_2D, 2);
+    std::cout << "Binding texture" << std::endl;
+    glBindTexture(GL_TEXTURE_2D, 1);
 }
 
 void GLMeshTexture::setPointerToMaterial(std::size_t pointer) {

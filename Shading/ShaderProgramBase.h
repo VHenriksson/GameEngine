@@ -24,9 +24,11 @@ public:
 
     void createFragmentShader();
 
-    void draw(std::shared_ptr<GLMeshBase> object);
+    void draw(GLMeshBase* object);
 
     virtual void setSpecifics() = 0;
+
+    //void draw(std::shared_ptr<GLMeshBase> object);
 };
 
 

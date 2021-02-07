@@ -52,14 +52,6 @@ iostream
 ../Materials/Material.h
 /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
 
-/home/viktor/CLionProjects/GameEngine/Objects/Importer.cpp
-stdexcept
--
-iostream
--
-Importer.h
-/home/viktor/CLionProjects/GameEngine/Objects/Importer.h
-
 /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
 assimp/Importer.hpp
 -
@@ -100,11 +92,29 @@ GLMesh/hashFunction.h
 
 /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
 
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp
+GL/glew.h
+-
+stdexcept
+-
+memory
+-
+ShaderProgramBase.h
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
+ShaderLoader.h
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
+
 /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
 string
 -
 ../Objects/GLMesh/GLMeshBase.h
 /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
+
+/home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp
+TexturePhongShader.h
+/home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
+../Objects/GLMesh/GLMeshTexture.h
+/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
 
 /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 memory
