@@ -18,6 +18,8 @@ void TexturePhongShader::setSpecifics() {
     }
     glBindTexture(GL_TEXTURE_2D, textureId);
      */
+    glUniform1i(glGetUniformLocation(shaderID,"Texture"),0);
+    glUniform1i(glGetUniformLocation(shaderID,"normalTexture"),1);
 }
 
 TexturePhongShader::TexturePhongShader(std::string name) : ShaderProgramBase(name) {

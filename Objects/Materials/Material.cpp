@@ -27,14 +27,12 @@ Material::Material(aiMaterial* material) {
         std::cout << data[i];
     }
      */
-    /*
     glGenTextures(1, &colourTextureReference);
     glBindTexture(GL_TEXTURE_2D, colourTextureReference);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free((void *) data);
     std::cout << "Material created with id " << colourTextureReference << std::endl;
-*/
 
 
     aiString normalMapLocation;
@@ -51,6 +49,7 @@ Material::Material(aiMaterial* material) {
 }
 
 void Material::bind() {
+    /*
     std::cout << "New mesh " << std::endl;
     glActiveTexture(GL_TEXTURE0);
     std::cout << "Binding Texture " << colourTextureReference << std::endl;
@@ -58,6 +57,7 @@ void Material::bind() {
     glActiveTexture(GL_TEXTURE1);
     std::cout << "Binding Texture " << normalTextureReference << std::endl;
     glBindTexture(GL_TEXTURE_2D, normalTextureReference);
+    */
 }
 
 std::string aiStringToString(aiString s){

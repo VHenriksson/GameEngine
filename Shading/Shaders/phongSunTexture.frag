@@ -29,13 +29,20 @@ void main() {
     float diffuseConst = max(dot(norm,sunLightDirection),0.0);
     vec4 diffuseLight = phongVector[1] * diffuseConst * sunLightColor;
 
+    /*
     // Calculation of specular light
     vec3 viewDirection = normalize(vec3(0,0,1) - FragmentPosition);
     vec3 reflectionDirection = reflect(sunLightDirection,norm);
     float spec = pow(max(dot(viewDirection,reflectionDirection),0),shininess);
     vec4 specularLight = phongVector[2] * spec * sunLightColor;
+*/
 
-    vec4 phongColor = (ambientLight  + diffuseLight + specularLight) * color + vec4(normalOffset,1);
+    vec4 phongColor;
+    if(diffuseConst != 0){
+        phongColor = (diffuseLight) * color;
+    } else {
+        phongColor = vec4(normalOffset,1);
+    }
 
     FragColor = phongColor;
 }
