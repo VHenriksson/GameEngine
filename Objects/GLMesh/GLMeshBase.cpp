@@ -69,7 +69,6 @@ void GLMeshBase::bind() {
 
 void GLMeshBase::draw() {
     prepareForDraw();
-    std::cout<< "Drawing " << glData.vao << std::endl;
     glDrawElements(GL_TRIANGLES, faceIndices.size(), GL_UNSIGNED_INT, 0);
 }
 

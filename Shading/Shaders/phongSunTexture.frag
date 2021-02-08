@@ -12,13 +12,12 @@ uniform sampler2D normalTexture;
 
 void main() {
     vec3 normalOffset = texture(normalTexture, TextureCoordinate).rgb;
-//    vec3 Normal = Normal -
+//    vec3 Normal = Normal - normalOffset;
 
     float shininess = 3;
-    vec3 phongVector = vec3(0.6,0.7,0.5);
-//    vec4 color = vec4(1,TextureCoordinate,1);
-    vec4 color = vec4(normalOffset,1);//texture(Texture,TextureCoordinate);
-    vec4 ambientLightColor = vec4(1,1,1,1);
+    vec3 phongVector = vec3(0.0,0.7,0.5);
+    vec4 color = texture(Texture,TextureCoordinate)*(normalOffset,1);
+    vec4 ambientLightColor = vec4(1,1,1,1);//vec4(normalOffset,1);
 
 
     vec4 sunLightColor = vec4(1,1,1,1);
@@ -36,7 +35,7 @@ void main() {
     float spec = pow(max(dot(viewDirection,reflectionDirection),0),shininess);
     vec4 specularLight = phongVector[2] * spec * sunLightColor;
 
-    vec4 phongColor = (ambientLight  + specularLight) * color;
+    vec4 phongColor = (ambientLight  + diffuseLight + specularLight) * color + vec4(normalOffset,1);
 
     FragColor = phongColor;
 }
