@@ -6,6 +6,7 @@
 #include "GLMeshBase.h"
 
 void GLMeshBase::setupMesh() {
+    position = glm::scale(position,glm::vec3(0.7)); //TODO should not be here, just for testing
     glData.setup();
     glData.bindVAO();
 
@@ -67,9 +68,13 @@ void GLMeshBase::bind() {
     glData.bindVAO();
 }
 
-void GLMeshBase::draw() {
-    prepareForDraw();
-    glDrawElements(GL_TRIANGLES, faceIndices.size(), GL_UNSIGNED_INT, 0);
+unsigned int GLMeshBase::getSize() {
+    return faceIndices.size();
+}
+
+glm::mat4 GLMeshBase::getPosition() {
+    position = glm::rotate(position,0.01f,glm::vec3(0.0,1,0.0)); //TODO just for testing
+    return position;
 }
 
 

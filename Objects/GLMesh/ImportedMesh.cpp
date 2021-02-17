@@ -11,12 +11,15 @@ void ImportedMesh::setNormal(unsigned int i) {
     vertices.push_back(mesh->mNormals[i].x);
     vertices.push_back(mesh->mNormals[i].y);
     vertices.push_back(mesh->mNormals[i].z);
+    std::cout << mesh->mNormals[i].x << " " << mesh->mNormals[i].y << " " << mesh->mNormals[i].z << std::endl;
 }
 
 void ImportedMesh::setPosition(unsigned int i) {
     vertices.push_back(mesh->mVertices[i].x);
     vertices.push_back(mesh->mVertices[i].y);
     vertices.push_back(mesh->mVertices[i].z);
+    std::cout << "New Vertex" << std::endl;
+    std::cout << mesh->mVertices[i].x << " " << mesh->mVertices[i].y << " " << mesh->mVertices[i].z << std::endl;
 }
 
 void ImportedMesh::import(aiMesh* mesh) {

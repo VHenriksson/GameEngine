@@ -10,7 +10,7 @@
 Importer::Importer(std::string source) {
     Assimp::Importer importer;
 
-    scene = importer.ReadFile(source,aiProcess_Triangulate | aiProcess_FlipUVs);
+    scene = importer.ReadFile(source,aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
 
     if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode){
         throw std::runtime_error("Could not load model\nAssimp error: " + std::string(importer.GetErrorString()) + "\n");

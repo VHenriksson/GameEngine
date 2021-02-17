@@ -5,6 +5,8 @@
 #include <GL/glew.h>
 #include <stdexcept>
 #include <memory>
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 #include "ShaderProgramBase.h"
 #include "ShaderLoader.h"
 #include "../Objects/Materials/Material.h"
@@ -17,6 +19,7 @@ ShaderProgramBase::ShaderProgramBase(std::string shaderSource) {
     glLinkProgram(shaderID);
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
+    unsigned int transformLoc = glGetUniformLocation(shaderID, "transform");
 }
 
 void ShaderProgramBase::createVertexShader() {
@@ -41,11 +44,11 @@ void ShaderProgramBase::createFragmentShader() {
 
 void ShaderProgramBase::draw(GLMeshBase* object, Material material) {
     glUseProgram(shaderID);
+    glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(object->getPosition()));
     setSpecifics();
     object->bind();
     material.bind();
-    object->draw();
-
+    glDrawElements(GL_TRIANGLES, object->getSize(), GL_UNSIGNED_INT, 0);
 }
 
 void ShaderProgramBase::testShaderCompilation(unsigned int shader) {

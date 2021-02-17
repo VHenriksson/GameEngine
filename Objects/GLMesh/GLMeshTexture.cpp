@@ -13,6 +13,7 @@ void GLMeshTexture::setTextureCoordinates() {
 
 void GLMeshTexture::setMaterial() {
     setTextureCoordinates();
+    setTangents();
 }
 
 GLMeshTexture::GLMeshTexture(aiMesh *mesh) {
@@ -27,10 +28,16 @@ GLMeshTexture::GLMeshTexture(aiMesh *mesh) {
 void GLMeshTexture::setExtras(unsigned int i) {
     vertices.push_back(mesh->mTextureCoords[0][i].x);
     vertices.push_back(mesh->mTextureCoords[0][i].y);
+    vertices.push_back(mesh->mTangents[i][0]);
+    vertices.push_back(mesh->mTangents[i][1]);
+    vertices.push_back(mesh->mTangents[i][2]);
+    vertices.push_back(mesh->mBitangents[i][0]);
+    vertices.push_back(mesh->mBitangents[i][1]);
+    vertices.push_back(mesh->mBitangents[i][2]);
 }
 
 int GLMeshTexture::extrasSize() {
-    return 2;
+    return 8;
 }
 
 std::vector<float> GLMeshTexture::getData() {
@@ -41,13 +48,17 @@ std::vector<unsigned int> GLMeshTexture::getFaces() {
     return faceIndices;
 }
 
-void GLMeshTexture::prepareForDraw() {
-}
-
 void GLMeshTexture::setPointerToMaterial(std::size_t pointer) {
     pointerToMaterial = pointer;
 }
 
 std::size_t GLMeshTexture::getMaterial() {
     return pointerToMaterial;
+}
+
+void GLMeshTexture::setTangents() {
+    glEnableVertexAttribArray(3);
+    glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, this->vertexSize()*sizeof(float), (void*)(8*sizeof(float)));
+    glEnableVertexAttribArray(4);
+    glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, this->vertexSize()*sizeof(float), (void*)(11*sizeof(float)));
 }

@@ -144,6 +144,18 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/TextureList.h">
 			<Option target="GameEngine"/>
 		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/Scene.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/Scene.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/TestScene.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/TestScene.h">
+			<Option target="GameEngine"/>
+		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp">
 			<Option target="GameEngine"/>
 		</Unit>

@@ -11,6 +11,7 @@
 #include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
+#include <glm/gtc/matrix_transform.hpp>
 
 
 struct material {
@@ -41,9 +42,11 @@ public:
     void setupMesh();
     void print();
     void bind();
-    void draw();
+    glm::mat4 getPosition();
+    unsigned int getSize();
 private:
     glContainer glData;
+    glm::mat4 position = glm::mat4(1.0f);
     void makeVertices();
     void makeFaces();
     void pushVertexData();
@@ -57,7 +60,6 @@ protected:
     std::vector<material> materials;
     virtual void setMaterial() = 0;
 
-    virtual void prepareForDraw() = 0;
 };
 
 

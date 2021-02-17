@@ -1,48 +1,41 @@
 #version 330 core
 out vec4 FragColor;
 
-in vec3 Normal;
 in vec3 FragmentPosition;
 in vec2 TextureCoordinate;
-uniform vec3 sunPos;
+in vec3 TangentLightPosition;
+in vec3 TangentViewPosition;
+in vec3 TangentFragmentPosition;
 
 uniform sampler2D Texture;
 uniform sampler2D normalTexture;
 
 
 void main() {
-    vec3 normalOffset = texture(normalTexture, TextureCoordinate).rgb;
-//    vec3 Normal = Normal - normalOffset;
-
-    float shininess = 3;
-    vec3 phongVector = vec3(0.0,0.7,0.5);
-    vec4 color = texture(Texture,TextureCoordinate)*(normalOffset,1);
+    vec3 normal = texture(normalTexture, TextureCoordinate).rgb;
+    normal = normalize(normal * 2.0 - 1.0);
+    //vec3 normal = vec3(0,0,1);
+    float shininess = 40;
+    vec3 phongVector = vec3(0.3,0.7,1);
+    vec4 color = texture(Texture,TextureCoordinate);
     vec4 ambientLightColor = vec4(1,1,1,1);//vec4(normalOffset,1);
 
-
+    // Calculation of ambient light
     vec4 sunLightColor = vec4(1,1,1,1);
-    vec3 sunLightDirection = normalize(sunPos);
+    vec3 sunLightDirection = normalize(TangentLightPosition);
     vec4 ambientLight = phongVector[0] * ambientLightColor;
 
     // Calculation of diffuse light
-    vec3 norm = normalize(Normal);
-    float diffuseConst = max(dot(norm,sunLightDirection),0.0);
+    float diffuseConst = max(dot(normal,sunLightDirection),0.0);
     vec4 diffuseLight = phongVector[1] * diffuseConst * sunLightColor;
 
-    /*
     // Calculation of specular light
-    vec3 viewDirection = normalize(vec3(0,0,1) - FragmentPosition);
-    vec3 reflectionDirection = reflect(sunLightDirection,norm);
-    float spec = pow(max(dot(viewDirection,reflectionDirection),0),shininess);
+    vec3 reflectionDirection = reflect(-sunLightDirection,normal);
+    vec3 viewDirection = normalize(TangentViewPosition - TangentFragmentPosition);
+    float spec = pow(max(dot(reflectionDirection,viewDirection),0),shininess);
     vec4 specularLight = phongVector[2] * spec * sunLightColor;
-*/
 
-    vec4 phongColor;
-    if(diffuseConst != 0){
-        phongColor = (diffuseLight) * color;
-    } else {
-        phongColor = vec4(normalOffset,1);
-    }
-
-    FragColor = phongColor;
+    //FragColor = vec4(TangentViewPosition,1);
+    //FragColor = vec4(TangentFragmentPosition,1);
+    FragColor = (specularLight + diffuseLight + ambientLight) * color;
 }

@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o"
   "/home/viktor/CLionProjects/GameEngine/Objects/PhongShadedObject.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.o"
   "/home/viktor/CLionProjects/GameEngine/Objects/Scene.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o"
+  "/home/viktor/CLionProjects/GameEngine/Scenes/Scene.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.o"
+  "/home/viktor/CLionProjects/GameEngine/Scenes/TestScene.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.o"
   "/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o"
   "/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o"
   "/home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp" "/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o"

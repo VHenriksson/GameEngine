@@ -19,7 +19,3 @@ GLMeshColour::GLMeshColour(aiMesh *mesh) {
     import(mesh);
 }
 
-void GLMeshColour::prepareForDraw() {
-
-}
-

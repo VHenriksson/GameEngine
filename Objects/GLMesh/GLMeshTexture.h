@@ -17,7 +17,6 @@ class GLMeshTexture : public ImportedMesh {
 
     int extrasSize() override;
     void setExtras(unsigned int i) override;
-    void prepareForDraw() override;
 
     size_t pointerToMaterial;
 
@@ -30,6 +29,8 @@ public:
     std::vector<unsigned int> getFaces();
 
     size_t getMaterial();
+
+    void setTangents();
 };
 
 

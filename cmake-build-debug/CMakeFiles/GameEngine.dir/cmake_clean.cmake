@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o"
   "CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.o"
   "CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o"
+  "CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.o"
+  "CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.o"
   "CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o"
   "CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o"
   "CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o"

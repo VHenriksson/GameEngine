@@ -31,6 +31,9 @@ public:
 
     //void draw(std::shared_ptr<GLMeshBase> object);
     void draw(GLMeshBase *object, Material material);
+
+    int transformLoc;
+    glm::mat4 trans = glm::mat4(1.0f);
 };
 
 

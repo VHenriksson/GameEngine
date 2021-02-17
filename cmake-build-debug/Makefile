@@ -386,6 +386,60 @@ Objects/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Scene.cpp.s
 .PHONY : Objects/Scene.cpp.s
 
+Scenes/Scene.o: Scenes/Scene.cpp.o
+
+.PHONY : Scenes/Scene.o
+
+# target to build an object file
+Scenes/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.o
+.PHONY : Scenes/Scene.cpp.o
+
+Scenes/Scene.i: Scenes/Scene.cpp.i
+
+.PHONY : Scenes/Scene.i
+
+# target to preprocess a source file
+Scenes/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.i
+.PHONY : Scenes/Scene.cpp.i
+
+Scenes/Scene.s: Scenes/Scene.cpp.s
+
+.PHONY : Scenes/Scene.s
+
+# target to generate assembly for a file
+Scenes/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.s
+.PHONY : Scenes/Scene.cpp.s
+
+Scenes/TestScene.o: Scenes/TestScene.cpp.o
+
+.PHONY : Scenes/TestScene.o
+
+# target to build an object file
+Scenes/TestScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.o
+.PHONY : Scenes/TestScene.cpp.o
+
+Scenes/TestScene.i: Scenes/TestScene.cpp.i
+
+.PHONY : Scenes/TestScene.i
+
+# target to preprocess a source file
+Scenes/TestScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.i
+.PHONY : Scenes/TestScene.cpp.i
+
+Scenes/TestScene.s: Scenes/TestScene.cpp.s
+
+.PHONY : Scenes/TestScene.s
+
+# target to generate assembly for a file
+Scenes/TestScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.s
+.PHONY : Scenes/TestScene.cpp.s
+
 Shading/ShaderLoader.o: Shading/ShaderLoader.cpp.o
 
 .PHONY : Shading/ShaderLoader.o
@@ -584,6 +638,12 @@ help:
 	@echo "... Objects/Scene.o"
 	@echo "... Objects/Scene.i"
 	@echo "... Objects/Scene.s"
+	@echo "... Scenes/Scene.o"
+	@echo "... Scenes/Scene.i"
+	@echo "... Scenes/Scene.s"
+	@echo "... Scenes/TestScene.o"
+	@echo "... Scenes/TestScene.i"
+	@echo "... Scenes/TestScene.s"
 	@echo "... Shading/ShaderLoader.o"
 	@echo "... Shading/ShaderLoader.i"
 	@echo "... Shading/ShaderLoader.s"
