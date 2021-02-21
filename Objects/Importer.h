@@ -31,11 +31,7 @@ public:
     Importer(std::string source);
     GLMeshTexture getMesh();
     std::vector<std::shared_ptr<GLMeshBase>> getMeshes();
-    TextureList getTextures();
-
     std::vector<unsigned int> getFaces();
-
-    std::vector<Material> getMaterials();
 };
 
 

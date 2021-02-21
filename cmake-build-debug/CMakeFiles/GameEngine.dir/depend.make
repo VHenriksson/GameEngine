@@ -6,8 +6,6 @@ CMakeFiles/GameEngine.dir/GameEngine.cpp.o: ../GameEngine.h
 
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshBase.cpp.o: ../Objects/GLMesh/GLMeshBase.cpp
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshBase.cpp.o: ../Objects/GLMesh/GLMeshBase.h
-CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshBase.cpp.o: ../Objects/GLMesh/hashFunction.h
-CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshBase.cpp.o: ../Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshBase.cpp.o: ../Shading/ShaderProgramBase.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshBase.cpp.o: ../Shading/ShaderVariableList.h
 
@@ -15,8 +13,6 @@ CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Objects/GLMesh/G
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Objects/GLMesh/GLMeshColour.cpp
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Objects/GLMesh/GLMeshColour.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Objects/GLMesh/ImportedMesh.h
-CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Objects/GLMesh/hashFunction.h
-CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Shading/ShaderProgramBase.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o: ../Shading/ShaderVariableList.h
 
@@ -32,8 +28,6 @@ CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o: ../Shading/ShaderV
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Objects/GLMesh/GLMeshBase.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Objects/GLMesh/ImportedMesh.cpp
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Objects/GLMesh/ImportedMesh.h
-CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Objects/GLMesh/hashFunction.h
-CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Shading/ShaderProgramBase.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o: ../Shading/ShaderVariableList.h
 
@@ -194,9 +188,7 @@ CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o: ../Scenes/SceneGeometrie
 CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o: ../Shading/ShaderProgramBase.h
 CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o: ../Shading/ShaderVariableList.h
 
-CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Objects/GLMesh/GLMeshBase.h
 CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Objects/GLMesh/hashFunction.h
-CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Scenes/ShaderProgramList.cpp
 CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Scenes/ShaderProgramList.h
 CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Shading/ShaderProgramBase.h
@@ -206,7 +198,6 @@ CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Shading/TexturePhon
 CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o: ../Shading/ShaderLoader.cpp
 CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o: ../Shading/ShaderLoader.h
 
-CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Objects/GLMesh/GLMeshBase.h
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Objects/GLMesh/hashFunction.h
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderLoader.h
@@ -215,7 +206,6 @@ CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderProg
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o: ../Shading/ShaderVariableList.h
 
 CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o: ../Objects/GLMesh/hashFunction.h
-CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o: ../Objects/Materials/Material.h
 CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o: ../Shading/ShaderVariableList.cpp
 CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o: ../Shading/ShaderVariableList.h
 

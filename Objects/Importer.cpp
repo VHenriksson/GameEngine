@@ -61,6 +61,3 @@ std::vector<std::shared_ptr<GLMeshBase>> Importer::getMeshes() {
 }
 
 
-std::vector<Material> Importer::getMaterials() {
-    return materials;
-}

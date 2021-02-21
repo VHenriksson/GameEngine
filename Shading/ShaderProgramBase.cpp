@@ -42,11 +42,6 @@ void ShaderProgramBase::createFragmentShader() {
     glAttachShader(shaderID, fragmentShader);
 }
 
-void ShaderProgramBase::draw(std::shared_ptr<GLMeshBase> object, Material material) {
-    setSpecifics();
-    object->bind();
-    material.bind();
-}
 
 void ShaderProgramBase::testShaderCompilation(unsigned int shader) {
     GLint vShaderCompiled = GL_TRUE;
@@ -58,12 +53,6 @@ void ShaderProgramBase::testShaderCompilation(unsigned int shader) {
         glDeleteShader(shader); // Don't leak the shader
         throw std::runtime_error( "Unable to compile shader! Shader ID: " + std::to_string(shader) + ". Shaderlog:\n" + errorLog);
     }
-}
-
-void ShaderProgramBase::setVector(unsigned int position, const float *valuePointer) {
-    try {
-//        glUniform3fv(position, 1, valuePtr);
-    } //TODO Error
 }
 
 void ShaderProgramBase::use() {

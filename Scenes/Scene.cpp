@@ -3,6 +3,7 @@
 //
 
 #include <set>
+#include <memory>
 #include "Scene.h"
 #include "../Objects/TexturedGeometry.h"
 

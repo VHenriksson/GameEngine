@@ -19,6 +19,8 @@ GL/gl.h
 -
 GL/glu.h
 -
+memory
+-
 glm/gtc/matrix_transform.hpp
 -
 ../../Shading/ShaderProgramBase.h
@@ -31,6 +33,14 @@ GLMeshBase.h
 /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
 ImportedMesh.h
 /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
+
+/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.cpp
+GL/glew.h
+-
+iostream
+-
+GLMeshTexture.h
+/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
 
 /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
 assimp/mesh.h
@@ -55,8 +65,6 @@ unordered_map
 -
 iostream
 -
-../Materials/Material.h
-/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
 
 /home/viktor/CLionProjects/GameEngine/Objects/Geometry.cpp
 Geometry.h
@@ -102,6 +110,16 @@ GLMesh/GLMeshColour.h
 TextureList.h
 /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
 
+/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.cpp
+iostream
+-
+GL/glew.h
+-
+Material.h
+/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+../../Textures/stb_image.h
+/home/viktor/CLionProjects/GameEngine/Textures/stb_image.h
+
 /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
 string
 -
@@ -131,6 +149,10 @@ Importer.h
 /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
 Geometry.h
 /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
+
+/home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.cpp
+PhongShadedGeometry.h
+/home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
 
 /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
 Geometry.h
@@ -203,6 +225,8 @@ set
 /home/viktor/CLionProjects/GameEngine/Scenes/Scene.cpp
 set
 -
+memory
+-
 Scene.h
 /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
 ../Objects/TexturedGeometry.h
@@ -248,17 +272,41 @@ memory
 
 /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
 
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp
+GL/glew.h
+-
+stdexcept
+-
+memory
+-
+glm/gtc/type_ptr.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+ShaderProgramBase.h
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
+ShaderLoader.h
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
+../Objects/Materials/Material.h
+/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+
 /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
 string
 -
-../Objects/GLMesh/GLMeshBase.h
-/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
-../Objects/Materials/Material.h
-/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
 ShaderVariableList.h
 /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 glm/gtc/type_ptr.hpp
 -
+GL/glew.h
+-
+
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.cpp
+GL/glew.h
+-
+ShaderVariableList.h
+/home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
+../Objects/GLMesh/hashFunction.h
+/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
 
 /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 unordered_map
@@ -278,6 +326,38 @@ ShaderProgramBase.h
 glm/glm.hpp
 /home/viktor/CLionProjects/GameEngine/Shading/glm/glm.hpp
 glm/gtc/type_ptr.hpp
+-
+
+/home/viktor/CLionProjects/GameEngine/Textures/stb_image.h
+stb_image.h
+/home/viktor/CLionProjects/GameEngine/Textures/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
 -
 
 /home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.h

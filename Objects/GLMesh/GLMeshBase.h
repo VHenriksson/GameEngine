@@ -11,13 +11,9 @@
 #include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
+#include <memory>
 #include <glm/gtc/matrix_transform.hpp>
 #include "../../Shading/ShaderProgramBase.h"
-
-
-struct material {
-
-};
 
 struct glContainer {
     unsigned int vao, vbo, ebo;
@@ -61,7 +57,6 @@ protected:
     virtual unsigned int normalOffset() = 0;
     std::vector<float> vertices;
     std::vector<unsigned int> faceIndices;
-    std::vector<material> materials;
     virtual void setMaterial() = 0;
 
 };

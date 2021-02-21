@@ -9,7 +9,6 @@
 #include <cstddef>
 #include <unordered_map>
 #include <iostream>
-#include "../Materials/Material.h"
 
 static std::hash<std::string> hasher;
 

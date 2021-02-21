@@ -22,8 +22,8 @@ TexturePhongShader shader = TexturePhongShader("/home/viktor/CLionProjects/GameE
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
-    Importer i = Importer("../spheres.obj");
-    TextureList materials = i.getTextures();
+//    Importer i = Importer("../spheres.obj");
+//    TextureList materials = i.getTextures();
 /*    std::vector<GLMeshTexture> object = i.getMeshes();
     for(int i = 0; i < object.size(); i++){
         object[i].setupMesh();

@@ -24,8 +24,6 @@ void ImportedMesh::setPosition(unsigned int i) {
 
 void ImportedMesh::import(aiMesh* mesh) {
     this->mesh = mesh;
-    std::vector<material> textures;
-
     for(unsigned int i = 0; i < mesh->mNumVertices; i++)
     {
         setVertex(i);

@@ -35,6 +35,7 @@ struct materialSource{
         normalTexture = aiStringToString(str);
         size_t id = getHash(diffuseTexture + normalTexture);
     }
+    materialSource(){}
 };
 
 class Material {

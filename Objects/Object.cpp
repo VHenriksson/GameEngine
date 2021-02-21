@@ -13,7 +13,6 @@ std::shared_ptr<Geometry> Object::getGeometry() {
 void Object::draw() {
     setupDraw();
     for(std::shared_ptr<GLMeshBase> mesh : *geometry){
-        mesh->setMaterial();
         mesh->draw();
     }
 }

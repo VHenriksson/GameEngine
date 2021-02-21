@@ -19,6 +19,7 @@ class GLMeshColour : public ImportedMesh {
 
 public:
     explicit GLMeshColour(aiMesh* mesh);
+    void drawSetup() override;
 };
 
 
