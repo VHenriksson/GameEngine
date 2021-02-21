@@ -77,5 +77,10 @@ glm::mat4 GLMeshBase::getPosition() {
     return position;
 }
 
+void GLMeshBase::draw() {
+    drawSetup();
+    glDrawElements(GL_TRIANGLES, faceIndices.size(), GL_UNSIGNED_INT, 0);
+}
+
 
 

@@ -48,13 +48,6 @@ std::vector<unsigned int> GLMeshTexture::getFaces() {
     return faceIndices;
 }
 
-void GLMeshTexture::setPointerToMaterial(std::size_t pointer) {
-    pointerToMaterial = pointer;
-}
-
-std::size_t GLMeshTexture::getMaterial() {
-    return pointerToMaterial;
-}
 
 void GLMeshTexture::setTangents() {
     glEnableVertexAttribArray(3);
@@ -62,3 +55,16 @@ void GLMeshTexture::setTangents() {
     glEnableVertexAttribArray(4);
     glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, this->vertexSize()*sizeof(float), (void*)(11*sizeof(float)));
 }
+
+void GLMeshTexture::drawSetup() {
+    material->bind();
+}
+
+size_t GLMeshTexture::getMaterialID() {
+    return material->getID();
+}
+
+std::shared_ptr<Material> GLMeshTexture::getMaterial() {
+    return material;
+}
+

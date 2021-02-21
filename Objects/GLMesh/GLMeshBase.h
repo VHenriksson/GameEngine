@@ -12,6 +12,7 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <glm/gtc/matrix_transform.hpp>
+#include "../../Shading/ShaderProgramBase.h"
 
 
 struct material {
@@ -44,6 +45,9 @@ public:
     void bind();
     glm::mat4 getPosition();
     unsigned int getSize();
+    void draw();
+    virtual void drawSetup() = 0;
+    std::shared_ptr<ShaderProgramBase> shader;
 private:
     glContainer glData;
     glm::mat4 position = glm::mat4(1.0f);

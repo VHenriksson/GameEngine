@@ -14,13 +14,34 @@
 
 
 Material::Material(aiMaterial* material) {
-    aiString diffuseMapLocation;
-    material->GetTexture(aiTextureType_DIFFUSE,0,&diffuseMapLocation);
-    std::cout << "Material loaded with " << aiStringToString(diffuseMapLocation) << std::endl;
+    source = materialSource(material);
+}
+
+void Material::bind() {
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, colourTextureReference);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, normalTextureReference);
+    /*
+    std::cout << "New mesh " << std::endl;
+    glActiveTexture(GL_TEXTURE0);
+    std::cout << "Binding Texture " << colourTextureReference << std::endl;
+    glBindTexture(GL_TEXTURE_2D, colourTextureReference);
+    glActiveTexture(GL_TEXTURE1);
+    std::cout << "Binding Texture " << normalTextureReference << std::endl;
+    glBindTexture(GL_TEXTURE_2D, normalTextureReference);
+    */
+}
+
+Material::Material(materialSource material) {
+    source = material;
+}
+
+void Material::load() {
     int width;
     int height;
     int nrOfChannels;
-    std::string fullPath = "/home/viktor/CLionProjects/GameEngine/" + aiStringToString(diffuseMapLocation) + ".jpg";
+    std::string fullPath = "/home/viktor/CLionProjects/GameEngine/" + source.diffuseTexture + ".jpg";
     unsigned char* data = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
     /*
     for(int i = 0; i < width*height; i++){
@@ -35,10 +56,9 @@ Material::Material(aiMaterial* material) {
     std::cout << "Material created with id " << colourTextureReference << std::endl;
 
 
-    aiString normalMapLocation;
-    material->GetTexture(aiTextureType_HEIGHT,0,&normalMapLocation); //TODO Assimp loads normal maps as height maps for .obj files. Should generalize to check the file type.
-    std::cout << "Material loaded with " << aiStringToString(normalMapLocation) << std::endl;
-    fullPath = "/home/viktor/CLionProjects/GameEngine/" + aiStringToString(normalMapLocation) + ".jpg";
+    std::cout << "Material loaded with " << source.diffuseTexture << std::endl;
+
+    fullPath = "/home/viktor/CLionProjects/GameEngine/" + source.normalTexture + ".jpg";
     data = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
     glGenTextures(1, &normalTextureReference);
     glBindTexture(GL_TEXTURE_2D, normalTextureReference);
@@ -48,16 +68,8 @@ Material::Material(aiMaterial* material) {
     std::cout << "Normals created with id " << normalTextureReference << std::endl;
 }
 
-void Material::bind() {
-    /*
-    std::cout << "New mesh " << std::endl;
-    glActiveTexture(GL_TEXTURE0);
-    std::cout << "Binding Texture " << colourTextureReference << std::endl;
-    glBindTexture(GL_TEXTURE_2D, colourTextureReference);
-    glActiveTexture(GL_TEXTURE1);
-    std::cout << "Binding Texture " << normalTextureReference << std::endl;
-    glBindTexture(GL_TEXTURE_2D, normalTextureReference);
-    */
+size_t Material::getID() {
+    return source.id;
 }
 
 std::string aiStringToString(aiString s){

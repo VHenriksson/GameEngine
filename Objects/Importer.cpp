@@ -36,16 +36,12 @@ void Importer::processMeshes(const aiNode *node) {
         if (mesh->mTextureCoords[0]) {
             GLMeshTexture textureMesh = GLMeshTexture(mesh);
             aiMaterial *material = scene->mMaterials[mesh->mMaterialIndex];
-            aiString str;
-            material->GetTexture(aiTextureType_DIFFUSE,0,&str);
-            std::size_t textureReference = getHash(aiStringToString(str));
-            if(materials.notSet(textureReference)){
-                materials.set(textureReference,Material(material));
-            }
-            textureMesh.setPointerToMaterial(textureReference);
-            textureMeshes.push_back(textureMesh);
+            std::shared_ptr<Material> pointerToMaterial = std::make_shared<Material>(Material(material));
+            textureMesh.setMaterial(pointerToMaterial);
+            meshes.push_back(std::make_shared<GLMeshTexture>(textureMesh));
         } else {
-            colourMeshes.push_back(GLMeshColour(mesh));
+            meshes.push_back(std::make_shared<GLMeshColour>(mesh));
+            //colourMeshes.push_back(GLMeshColour(mesh));
         }
     }
 }
@@ -60,10 +56,11 @@ std::vector<unsigned int> Importer::getFaces() {
     return t.getFaces();
 }
 
-std::vector<GLMeshTexture> Importer::getMeshes() {
-    return textureMeshes;
+std::vector<std::shared_ptr<GLMeshBase>> Importer::getMeshes() {
+    return meshes;
 }
 
-TextureList Importer::getTextures() {
+
+std::vector<Material> Importer::getMaterials() {
     return materials;
 }

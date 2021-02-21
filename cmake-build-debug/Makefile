@@ -278,6 +278,33 @@ Objects/GLMesh/ImportedMesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.s
 .PHONY : Objects/GLMesh/ImportedMesh.cpp.s
 
+Objects/Geometry.o: Objects/Geometry.cpp.o
+
+.PHONY : Objects/Geometry.o
+
+# target to build an object file
+Objects/Geometry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o
+.PHONY : Objects/Geometry.cpp.o
+
+Objects/Geometry.i: Objects/Geometry.cpp.i
+
+.PHONY : Objects/Geometry.i
+
+# target to preprocess a source file
+Objects/Geometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.i
+.PHONY : Objects/Geometry.cpp.i
+
+Objects/Geometry.s: Objects/Geometry.cpp.s
+
+.PHONY : Objects/Geometry.s
+
+# target to generate assembly for a file
+Objects/Geometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.s
+.PHONY : Objects/Geometry.cpp.s
+
 Objects/Importer.o: Objects/Importer.cpp.o
 
 .PHONY : Objects/Importer.o
@@ -332,59 +359,167 @@ Objects/Materials/Material.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.s
 .PHONY : Objects/Materials/Material.cpp.s
 
-Objects/PhongShadedObject.o: Objects/PhongShadedObject.cpp.o
+Objects/Object.o: Objects/Object.cpp.o
 
-.PHONY : Objects/PhongShadedObject.o
-
-# target to build an object file
-Objects/PhongShadedObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.o
-.PHONY : Objects/PhongShadedObject.cpp.o
-
-Objects/PhongShadedObject.i: Objects/PhongShadedObject.cpp.i
-
-.PHONY : Objects/PhongShadedObject.i
-
-# target to preprocess a source file
-Objects/PhongShadedObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.i
-.PHONY : Objects/PhongShadedObject.cpp.i
-
-Objects/PhongShadedObject.s: Objects/PhongShadedObject.cpp.s
-
-.PHONY : Objects/PhongShadedObject.s
-
-# target to generate assembly for a file
-Objects/PhongShadedObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/PhongShadedObject.cpp.s
-.PHONY : Objects/PhongShadedObject.cpp.s
-
-Objects/Scene.o: Objects/Scene.cpp.o
-
-.PHONY : Objects/Scene.o
+.PHONY : Objects/Object.o
 
 # target to build an object file
-Objects/Scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Scene.cpp.o
-.PHONY : Objects/Scene.cpp.o
+Objects/Object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Object.cpp.o
+.PHONY : Objects/Object.cpp.o
 
-Objects/Scene.i: Objects/Scene.cpp.i
+Objects/Object.i: Objects/Object.cpp.i
 
-.PHONY : Objects/Scene.i
+.PHONY : Objects/Object.i
 
 # target to preprocess a source file
-Objects/Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Scene.cpp.i
-.PHONY : Objects/Scene.cpp.i
+Objects/Object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Object.cpp.i
+.PHONY : Objects/Object.cpp.i
 
-Objects/Scene.s: Objects/Scene.cpp.s
+Objects/Object.s: Objects/Object.cpp.s
 
-.PHONY : Objects/Scene.s
+.PHONY : Objects/Object.s
 
 # target to generate assembly for a file
-Objects/Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Scene.cpp.s
-.PHONY : Objects/Scene.cpp.s
+Objects/Object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/Object.cpp.s
+.PHONY : Objects/Object.cpp.s
+
+Objects/PhongShadedGeometry.o: Objects/PhongShadedGeometry.cpp.o
+
+.PHONY : Objects/PhongShadedGeometry.o
+
+# target to build an object file
+Objects/PhongShadedGeometry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o
+.PHONY : Objects/PhongShadedGeometry.cpp.o
+
+Objects/PhongShadedGeometry.i: Objects/PhongShadedGeometry.cpp.i
+
+.PHONY : Objects/PhongShadedGeometry.i
+
+# target to preprocess a source file
+Objects/PhongShadedGeometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.i
+.PHONY : Objects/PhongShadedGeometry.cpp.i
+
+Objects/PhongShadedGeometry.s: Objects/PhongShadedGeometry.cpp.s
+
+.PHONY : Objects/PhongShadedGeometry.s
+
+# target to generate assembly for a file
+Objects/PhongShadedGeometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.s
+.PHONY : Objects/PhongShadedGeometry.cpp.s
+
+Objects/TexturedGeometry.o: Objects/TexturedGeometry.cpp.o
+
+.PHONY : Objects/TexturedGeometry.o
+
+# target to build an object file
+Objects/TexturedGeometry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o
+.PHONY : Objects/TexturedGeometry.cpp.o
+
+Objects/TexturedGeometry.i: Objects/TexturedGeometry.cpp.i
+
+.PHONY : Objects/TexturedGeometry.i
+
+# target to preprocess a source file
+Objects/TexturedGeometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.i
+.PHONY : Objects/TexturedGeometry.cpp.i
+
+Objects/TexturedGeometry.s: Objects/TexturedGeometry.cpp.s
+
+.PHONY : Objects/TexturedGeometry.s
+
+# target to generate assembly for a file
+Objects/TexturedGeometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.s
+.PHONY : Objects/TexturedGeometry.cpp.s
+
+Scenes/GameScenes/GameObjects/PhongShadedObject.o: Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o
+
+.PHONY : Scenes/GameScenes/GameObjects/PhongShadedObject.o
+
+# target to build an object file
+Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o
+.PHONY : Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o
+
+Scenes/GameScenes/GameObjects/PhongShadedObject.i: Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.i
+
+.PHONY : Scenes/GameScenes/GameObjects/PhongShadedObject.i
+
+# target to preprocess a source file
+Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.i
+.PHONY : Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.i
+
+Scenes/GameScenes/GameObjects/PhongShadedObject.s: Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.s
+
+.PHONY : Scenes/GameScenes/GameObjects/PhongShadedObject.s
+
+# target to generate assembly for a file
+Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.s
+.PHONY : Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.s
+
+Scenes/GameScenes/TestScene.o: Scenes/GameScenes/TestScene.cpp.o
+
+.PHONY : Scenes/GameScenes/TestScene.o
+
+# target to build an object file
+Scenes/GameScenes/TestScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o
+.PHONY : Scenes/GameScenes/TestScene.cpp.o
+
+Scenes/GameScenes/TestScene.i: Scenes/GameScenes/TestScene.cpp.i
+
+.PHONY : Scenes/GameScenes/TestScene.i
+
+# target to preprocess a source file
+Scenes/GameScenes/TestScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.i
+.PHONY : Scenes/GameScenes/TestScene.cpp.i
+
+Scenes/GameScenes/TestScene.s: Scenes/GameScenes/TestScene.cpp.s
+
+.PHONY : Scenes/GameScenes/TestScene.s
+
+# target to generate assembly for a file
+Scenes/GameScenes/TestScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.s
+.PHONY : Scenes/GameScenes/TestScene.cpp.s
+
+Scenes/RenderingList.o: Scenes/RenderingList.cpp.o
+
+.PHONY : Scenes/RenderingList.o
+
+# target to build an object file
+Scenes/RenderingList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o
+.PHONY : Scenes/RenderingList.cpp.o
+
+Scenes/RenderingList.i: Scenes/RenderingList.cpp.i
+
+.PHONY : Scenes/RenderingList.i
+
+# target to preprocess a source file
+Scenes/RenderingList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.i
+.PHONY : Scenes/RenderingList.cpp.i
+
+Scenes/RenderingList.s: Scenes/RenderingList.cpp.s
+
+.PHONY : Scenes/RenderingList.s
+
+# target to generate assembly for a file
+Scenes/RenderingList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.s
+.PHONY : Scenes/RenderingList.cpp.s
 
 Scenes/Scene.o: Scenes/Scene.cpp.o
 
@@ -413,32 +548,59 @@ Scenes/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.s
 .PHONY : Scenes/Scene.cpp.s
 
-Scenes/TestScene.o: Scenes/TestScene.cpp.o
+Scenes/SceneGeometries.o: Scenes/SceneGeometries.cpp.o
 
-.PHONY : Scenes/TestScene.o
+.PHONY : Scenes/SceneGeometries.o
 
 # target to build an object file
-Scenes/TestScene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.o
-.PHONY : Scenes/TestScene.cpp.o
+Scenes/SceneGeometries.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o
+.PHONY : Scenes/SceneGeometries.cpp.o
 
-Scenes/TestScene.i: Scenes/TestScene.cpp.i
+Scenes/SceneGeometries.i: Scenes/SceneGeometries.cpp.i
 
-.PHONY : Scenes/TestScene.i
+.PHONY : Scenes/SceneGeometries.i
 
 # target to preprocess a source file
-Scenes/TestScene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.i
-.PHONY : Scenes/TestScene.cpp.i
+Scenes/SceneGeometries.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.i
+.PHONY : Scenes/SceneGeometries.cpp.i
 
-Scenes/TestScene.s: Scenes/TestScene.cpp.s
+Scenes/SceneGeometries.s: Scenes/SceneGeometries.cpp.s
 
-.PHONY : Scenes/TestScene.s
+.PHONY : Scenes/SceneGeometries.s
 
 # target to generate assembly for a file
-Scenes/TestScene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/TestScene.cpp.s
-.PHONY : Scenes/TestScene.cpp.s
+Scenes/SceneGeometries.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.s
+.PHONY : Scenes/SceneGeometries.cpp.s
+
+Scenes/ShaderProgramList.o: Scenes/ShaderProgramList.cpp.o
+
+.PHONY : Scenes/ShaderProgramList.o
+
+# target to build an object file
+Scenes/ShaderProgramList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o
+.PHONY : Scenes/ShaderProgramList.cpp.o
+
+Scenes/ShaderProgramList.i: Scenes/ShaderProgramList.cpp.i
+
+.PHONY : Scenes/ShaderProgramList.i
+
+# target to preprocess a source file
+Scenes/ShaderProgramList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.i
+.PHONY : Scenes/ShaderProgramList.cpp.i
+
+Scenes/ShaderProgramList.s: Scenes/ShaderProgramList.cpp.s
+
+.PHONY : Scenes/ShaderProgramList.s
+
+# target to generate assembly for a file
+Scenes/ShaderProgramList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.s
+.PHONY : Scenes/ShaderProgramList.cpp.s
 
 Shading/ShaderLoader.o: Shading/ShaderLoader.cpp.o
 
@@ -493,6 +655,33 @@ Shading/ShaderProgramBase.s: Shading/ShaderProgramBase.cpp.s
 Shading/ShaderProgramBase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.s
 .PHONY : Shading/ShaderProgramBase.cpp.s
+
+Shading/ShaderVariableList.o: Shading/ShaderVariableList.cpp.o
+
+.PHONY : Shading/ShaderVariableList.o
+
+# target to build an object file
+Shading/ShaderVariableList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o
+.PHONY : Shading/ShaderVariableList.cpp.o
+
+Shading/ShaderVariableList.i: Shading/ShaderVariableList.cpp.i
+
+.PHONY : Shading/ShaderVariableList.i
+
+# target to preprocess a source file
+Shading/ShaderVariableList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.i
+.PHONY : Shading/ShaderVariableList.cpp.i
+
+Shading/ShaderVariableList.s: Shading/ShaderVariableList.cpp.s
+
+.PHONY : Shading/ShaderVariableList.s
+
+# target to generate assembly for a file
+Shading/ShaderVariableList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameEngine.dir/build.make CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.s
+.PHONY : Shading/ShaderVariableList.cpp.s
 
 Shading/TexturePhongShader.o: Shading/TexturePhongShader.cpp.o
 
@@ -626,30 +815,51 @@ help:
 	@echo "... Objects/GLMesh/ImportedMesh.o"
 	@echo "... Objects/GLMesh/ImportedMesh.i"
 	@echo "... Objects/GLMesh/ImportedMesh.s"
+	@echo "... Objects/Geometry.o"
+	@echo "... Objects/Geometry.i"
+	@echo "... Objects/Geometry.s"
 	@echo "... Objects/Importer.o"
 	@echo "... Objects/Importer.i"
 	@echo "... Objects/Importer.s"
 	@echo "... Objects/Materials/Material.o"
 	@echo "... Objects/Materials/Material.i"
 	@echo "... Objects/Materials/Material.s"
-	@echo "... Objects/PhongShadedObject.o"
-	@echo "... Objects/PhongShadedObject.i"
-	@echo "... Objects/PhongShadedObject.s"
-	@echo "... Objects/Scene.o"
-	@echo "... Objects/Scene.i"
-	@echo "... Objects/Scene.s"
+	@echo "... Objects/Object.o"
+	@echo "... Objects/Object.i"
+	@echo "... Objects/Object.s"
+	@echo "... Objects/PhongShadedGeometry.o"
+	@echo "... Objects/PhongShadedGeometry.i"
+	@echo "... Objects/PhongShadedGeometry.s"
+	@echo "... Objects/TexturedGeometry.o"
+	@echo "... Objects/TexturedGeometry.i"
+	@echo "... Objects/TexturedGeometry.s"
+	@echo "... Scenes/GameScenes/GameObjects/PhongShadedObject.o"
+	@echo "... Scenes/GameScenes/GameObjects/PhongShadedObject.i"
+	@echo "... Scenes/GameScenes/GameObjects/PhongShadedObject.s"
+	@echo "... Scenes/GameScenes/TestScene.o"
+	@echo "... Scenes/GameScenes/TestScene.i"
+	@echo "... Scenes/GameScenes/TestScene.s"
+	@echo "... Scenes/RenderingList.o"
+	@echo "... Scenes/RenderingList.i"
+	@echo "... Scenes/RenderingList.s"
 	@echo "... Scenes/Scene.o"
 	@echo "... Scenes/Scene.i"
 	@echo "... Scenes/Scene.s"
-	@echo "... Scenes/TestScene.o"
-	@echo "... Scenes/TestScene.i"
-	@echo "... Scenes/TestScene.s"
+	@echo "... Scenes/SceneGeometries.o"
+	@echo "... Scenes/SceneGeometries.i"
+	@echo "... Scenes/SceneGeometries.s"
+	@echo "... Scenes/ShaderProgramList.o"
+	@echo "... Scenes/ShaderProgramList.i"
+	@echo "... Scenes/ShaderProgramList.s"
 	@echo "... Shading/ShaderLoader.o"
 	@echo "... Shading/ShaderLoader.i"
 	@echo "... Shading/ShaderLoader.s"
 	@echo "... Shading/ShaderProgramBase.o"
 	@echo "... Shading/ShaderProgramBase.i"
 	@echo "... Shading/ShaderProgramBase.s"
+	@echo "... Shading/ShaderVariableList.o"
+	@echo "... Shading/ShaderVariableList.i"
+	@echo "... Shading/ShaderVariableList.s"
 	@echo "... Shading/TexturePhongShader.o"
 	@echo "... Shading/TexturePhongShader.i"
 	@echo "... Shading/TexturePhongShader.s"

@@ -11,15 +11,19 @@
 #include "GLMesh/hashFunction.h"
 
 
-class TextureList : std::unordered_map<size_t,Material>{
+class TextureList : std::unordered_map<size_t,std::shared_ptr<Material>>{
 public:
-    Material get(std::size_t hashValue) {return this->at(hashValue);}
-    Material get(std::string textureName) {return this->at(getHash(textureName));}
+    std::shared_ptr<Material> get(std::size_t hashValue) {return this->at(hashValue);}
+    std::shared_ptr<Material> get(std::string textureName) {return this->at(getHash(textureName));}
+    /*
     void set(std::size_t hashValue,Material material) {
-        this->insert(std::pair<size_t,Material>(std::make_pair(hashValue,material)));
+        this->insert(std::pair<size_t,Material>(std::make_pair(hashValue,stdmaterial)));
     }
     void set(std::string textureName,Material material) {
         this->insert(std::pair<size_t,Material>(std::make_pair(getHash(textureName),material)));
+    }*/
+    void set(size_t textureID,std::shared_ptr<Material> material) {
+        this->insert(std::make_pair(textureID,material));
     }
     bool notSet(std::string textureName){
         return (this->find(getHash(textureName)) == this->end());

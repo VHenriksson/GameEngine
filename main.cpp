@@ -24,7 +24,7 @@ int main() {
 
     Importer i = Importer("../spheres.obj");
     TextureList materials = i.getTextures();
-    std::vector<GLMeshTexture> object = i.getMeshes();
+/*    std::vector<GLMeshTexture> object = i.getMeshes();
     for(int i = 0; i < object.size(); i++){
         object[i].setupMesh();
     }
@@ -37,8 +37,6 @@ int main() {
 
     glEnable(GL_DEPTH_TEST);
     while(1){
-        glClearColor(0, 0, 0.1, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         for(int i = 0; i < object.size(); i++){
             glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, 2*i+1);
@@ -47,6 +45,6 @@ int main() {
             shader.draw(&object[i],materials.get(object[i].getMaterial()));
         }
         w.updateWindow();
-    }
+    }*/
     return 0;
 }

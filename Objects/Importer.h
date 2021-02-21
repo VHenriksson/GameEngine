@@ -10,14 +10,16 @@
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
 #include <unordered_map>
+#include <memory>
 #include "GLMesh/GLMeshBase.h"
 #include "GLMesh/GLMeshTexture.h"
 #include "GLMesh/GLMeshColour.h"
 #include "TextureList.h"
 
+
 class Importer {
     const aiScene *scene;
-    TextureList materials;
+    std::vector<std::shared_ptr<GLMeshBase>> meshes;
     std::vector<GLMeshTexture> textureMeshes;
     std::vector<GLMeshColour> colourMeshes;
 
@@ -28,10 +30,12 @@ class Importer {
 public:
     Importer(std::string source);
     GLMeshTexture getMesh();
-    std::vector<GLMeshTexture> getMeshes();
+    std::vector<std::shared_ptr<GLMeshBase>> getMeshes();
     TextureList getTextures();
 
     std::vector<unsigned int> getFaces();
+
+    std::vector<Material> getMaterials();
 };
 
 

@@ -6,8 +6,25 @@
 #define GAMEENGINE_SCENE_H
 
 
+#include "SceneGeometries.h"
+#include "ShaderProgramList.h"
+#include "RenderingList.h"
+
 class Scene {
-    virtual void draw() = 0;
+private:
+    void loadTextures();
+protected:
+    RenderingList renderList;
+    TextureList materials;
+    SceneGeometries geometries;
+    glm::vec4 backgroundColour;
+    virtual void shaderSettings(std::shared_ptr<ShaderProgramBase> shader) = 0;
+    virtual void setObjects() = 0;
+    void setShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProgramBase> shader);
+public:
+    void draw();
+    void load();
+
 };
 
 

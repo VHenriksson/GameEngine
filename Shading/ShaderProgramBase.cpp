@@ -42,13 +42,10 @@ void ShaderProgramBase::createFragmentShader() {
     glAttachShader(shaderID, fragmentShader);
 }
 
-void ShaderProgramBase::draw(GLMeshBase* object, Material material) {
-    glUseProgram(shaderID);
-    glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(object->getPosition()));
+void ShaderProgramBase::draw(std::shared_ptr<GLMeshBase> object, Material material) {
     setSpecifics();
     object->bind();
     material.bind();
-    glDrawElements(GL_TRIANGLES, object->getSize(), GL_UNSIGNED_INT, 0);
 }
 
 void ShaderProgramBase::testShaderCompilation(unsigned int shader) {
@@ -63,3 +60,12 @@ void ShaderProgramBase::testShaderCompilation(unsigned int shader) {
     }
 }
 
+void ShaderProgramBase::setVector(unsigned int position, const float *valuePointer) {
+    try {
+//        glUniform3fv(position, 1, valuePtr);
+    } //TODO Error
+}
+
+void ShaderProgramBase::use() {
+    glUseProgram(shaderID);
+}
