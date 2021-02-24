@@ -7,6 +7,7 @@
 #include <memory>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <vector>
 #include "ShaderProgramBase.h"
 #include "ShaderLoader.h"
 #include "../Objects/Materials/Material.h"
@@ -19,7 +20,7 @@ ShaderProgramBase::ShaderProgramBase(std::string shaderSource) {
     glLinkProgram(shaderID);
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
-    unsigned int transformLoc = glGetUniformLocation(shaderID, "transform");
+    testProgramLinked();
 }
 
 void ShaderProgramBase::createVertexShader() {
@@ -57,4 +58,25 @@ void ShaderProgramBase::testShaderCompilation(unsigned int shader) {
 
 void ShaderProgramBase::use() {
     glUseProgram(shaderID);
+}
+
+void ShaderProgramBase::testProgramLinked() {
+    GLint isLinked = 0;
+    glGetProgramiv(shaderID, GL_LINK_STATUS, &isLinked);
+    if (isLinked == GL_FALSE)
+    {
+        GLint maxLength = 0;
+        glGetProgramiv(shaderID, GL_INFO_LOG_LENGTH, &maxLength);
+        std::vector<GLchar> infoLog(maxLength);
+        glGetProgramInfoLog(shaderID, maxLength, &maxLength, &infoLog[0]);
+        glDeleteProgram(shaderID);
+        return;
+    }
+}
+
+unsigned int ShaderProgramBase::getUniform(const char* name) {
+    unsigned int returnvalue = glGetUniformLocation(shaderID, name);
+    if(returnvalue == -1){
+        throw std::runtime_error("The variable " + std::string(name) + " does not occure in shader nr " + std::to_string(shaderID) + ". Maybe it has been optimized away?");
+    }
 }

@@ -37,10 +37,6 @@ class GLMeshBase {
 public:
     void initialize();
     void setupMesh();
-    void print();
-    void bind();
-    glm::mat4 getPosition();
-    unsigned int getSize();
     void draw();
     virtual void drawSetup() = 0;
     std::shared_ptr<ShaderProgramBase> shader;
@@ -57,8 +53,7 @@ protected:
     virtual unsigned int normalOffset() = 0;
     std::vector<float> vertices;
     std::vector<unsigned int> faceIndices;
-    virtual void setMaterial() = 0;
-
+    virtual void setSpecifics() = 0;
 };
 
 

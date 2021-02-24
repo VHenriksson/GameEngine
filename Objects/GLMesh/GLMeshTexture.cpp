@@ -11,7 +11,7 @@ void GLMeshTexture::setTextureCoordinates() {
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, this->vertexSize()*sizeof(float), (void*)(6*sizeof(float)));
 }
 
-void GLMeshTexture::setMaterial() {
+void GLMeshTexture::setSpecifics() {
     setTextureCoordinates();
     setTangents();
 }
@@ -66,5 +66,9 @@ size_t GLMeshTexture::getMaterialID() {
 
 std::shared_ptr<Material> GLMeshTexture::getMaterial() {
     return material;
+}
+
+void GLMeshTexture::setMaterial(std::shared_ptr<Material> material) {
+    this->material = material;
 }
 

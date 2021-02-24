@@ -17,7 +17,7 @@ protected:
     std::shared_ptr<Geometry> geometry;
 public:
     std::unordered_map<size_t, materialSource> getMaterials();
-    std::shared_ptr<Geometry> getGeometry();
+    virtual void setShader(std::shared_ptr<ShaderProgramBase> shader) = 0;
     void draw();
     virtual void setupDraw() = 0;
 };

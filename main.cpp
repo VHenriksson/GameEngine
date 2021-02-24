@@ -4,6 +4,7 @@
 #include "Shading/ShaderLoader.h"
 #include "Shading/ShaderProgramBase.h"
 #include "Shading/TexturePhongShader.h"
+#include "Scenes/GameScenes/TestScene.h"
 
 
 GLuint textureId;
@@ -17,11 +18,17 @@ int nrOfChannels;
 int I = 0;
 
 GLwindow w = GLwindow();
-TexturePhongShader shader = TexturePhongShader("/home/viktor/CLionProjects/GameEngine/Shading/Shaders/phongSunTexture");
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
+    TestScene s = TestScene();
+    glEnable(GL_DEPTH_TEST); //TODO move this
+    s.load();
+    while(1){
+        s.draw();
+        w.updateWindow();
+    }
 //    Importer i = Importer("../spheres.obj");
 //    TextureList materials = i.getTextures();
 /*    std::vector<GLMeshTexture> object = i.getMeshes();

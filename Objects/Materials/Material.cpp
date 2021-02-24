@@ -22,15 +22,6 @@ void Material::bind() {
     glBindTexture(GL_TEXTURE_2D, colourTextureReference);
     glActiveTexture(GL_TEXTURE1);
     glBindTexture(GL_TEXTURE_2D, normalTextureReference);
-    /*
-    std::cout << "New mesh " << std::endl;
-    glActiveTexture(GL_TEXTURE0);
-    std::cout << "Binding Texture " << colourTextureReference << std::endl;
-    glBindTexture(GL_TEXTURE_2D, colourTextureReference);
-    glActiveTexture(GL_TEXTURE1);
-    std::cout << "Binding Texture " << normalTextureReference << std::endl;
-    glBindTexture(GL_TEXTURE_2D, normalTextureReference);
-    */
 }
 
 Material::Material(materialSource material) {
@@ -43,29 +34,23 @@ void Material::load() {
     int nrOfChannels;
     std::string fullPath = "/home/viktor/CLionProjects/GameEngine/" + source.diffuseTexture + ".jpg";
     unsigned char* data = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
-    /*
-    for(int i = 0; i < width*height; i++){
-        std::cout << data[i];
-    }
-     */
     glGenTextures(1, &colourTextureReference);
     glBindTexture(GL_TEXTURE_2D, colourTextureReference);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free((void *) data);
     std::cout << "Material created with id " << colourTextureReference << std::endl;
-
-
     std::cout << "Material loaded with " << source.diffuseTexture << std::endl;
 
     fullPath = "/home/viktor/CLionProjects/GameEngine/" + source.normalTexture + ".jpg";
-    data = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
+    unsigned char* normalData = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
     glGenTextures(1, &normalTextureReference);
     glBindTexture(GL_TEXTURE_2D, normalTextureReference);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, normalData);
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free((void *) data);
     std::cout << "Normals created with id " << normalTextureReference << std::endl;
+    std::cout << "Material loaded with " << source.normalTexture << std::endl;
 }
 
 size_t Material::getID() {

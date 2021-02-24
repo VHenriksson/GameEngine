@@ -11,5 +11,18 @@ PhongShadedObject::PhongShadedObject(std::shared_ptr<Geometry> geometry) {
 }
 
 void PhongShadedObject::setupDraw() {
-    glUniform3fv(MAIN_SHADER_OBJECT_POSITION, 1, glm::value_ptr(position));
+    shader->setObjectPosition(position);
+}
+
+
+
+void PhongShadedObject::setShader(std::shared_ptr<ShaderProgramBase> shader) {
+    this->shader = std::dynamic_pointer_cast<TexturePhongShader>(shader);
+    if(!this->shader){
+        throw std::runtime_error("Trying to set non-textured shader to textured object");
+    }
+}
+
+void PhongShadedObject::setPosition(glm::mat4 position) {
+    this->position = position;
 }

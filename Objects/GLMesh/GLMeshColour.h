@@ -12,7 +12,7 @@
 
 class GLMeshColour : public ImportedMesh {
 
-    void setMaterial() override;
+    void setSpecifics() override;
 
     int extrasSize() override;
     void setExtras(unsigned int i) override;

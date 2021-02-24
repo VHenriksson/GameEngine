@@ -18,7 +18,7 @@ protected:
     TextureList materials;
     SceneGeometries geometries;
     glm::vec4 backgroundColour;
-    virtual void shaderSettings(std::shared_ptr<ShaderProgramBase> shader) = 0;
+    virtual void updateSceneGlobals() = 0;
     virtual void setObjects() = 0;
     void setShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProgramBase> shader);
 public:

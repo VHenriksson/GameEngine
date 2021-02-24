@@ -21,7 +21,6 @@ class Importer {
     const aiScene *scene;
     std::vector<std::shared_ptr<GLMeshBase>> meshes;
     std::vector<GLMeshTexture> textureMeshes;
-    std::vector<GLMeshColour> colourMeshes;
 
     void processNode(aiNode *node);
 
@@ -29,9 +28,7 @@ class Importer {
 
 public:
     Importer(std::string source);
-    GLMeshTexture getMesh();
     std::vector<std::shared_ptr<GLMeshBase>> getMeshes();
-    std::vector<unsigned int> getFaces();
 };
 
 

@@ -8,13 +8,17 @@
 
 #include "../../../Objects/Object.h"
 #include "../../../Objects/PhongShadedGeometry.h"
+#include "../../../Shading/TexturePhongShader.h"
 
 class PhongShadedObject : public Object {
 private:
     glm::mat4 position;
+    std::shared_ptr<TexturePhongShader> shader;
 public:
     PhongShadedObject(std::shared_ptr<Geometry> geometry);
     void setupDraw() override;
+    void setPosition(glm::mat4 position);
+    void setShader(std::shared_ptr<ShaderProgramBase> shader) override;
 };
 
 

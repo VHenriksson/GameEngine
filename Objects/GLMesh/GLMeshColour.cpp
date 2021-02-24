@@ -4,7 +4,7 @@
 
 #include "GLMeshColour.h"
 
-void GLMeshColour::setMaterial() {
+void GLMeshColour::setSpecifics() {
     //TODO
 }
 

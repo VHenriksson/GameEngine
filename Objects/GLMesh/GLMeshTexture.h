@@ -13,7 +13,6 @@
 #include "../Materials/Material.h"
 
 class GLMeshTexture : public ImportedMesh {
-    void setMaterial() override;
     void setTextureCoordinates();
 
     int extrasSize() override;
@@ -21,9 +20,10 @@ class GLMeshTexture : public ImportedMesh {
 
     std::shared_ptr<Material> material;
 
+protected:
+    void setSpecifics() override;
 public:
     explicit GLMeshTexture(aiMesh *mesh);
-    void setPointerToMaterial(std::size_t pointer);
 
     std::vector<float> getData();
     void drawSetup() override;

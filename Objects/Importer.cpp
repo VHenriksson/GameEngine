@@ -41,19 +41,8 @@ void Importer::processMeshes(const aiNode *node) {
             meshes.push_back(std::make_shared<GLMeshTexture>(textureMesh));
         } else {
             meshes.push_back(std::make_shared<GLMeshColour>(mesh));
-            //colourMeshes.push_back(GLMeshColour(mesh));
         }
     }
-}
-
-GLMeshTexture Importer::getMesh() {
-    return textureMeshes[0];
-//    return t.getData();
-}
-
-std::vector<unsigned int> Importer::getFaces() {
-    GLMeshTexture t = textureMeshes[0];
-    return t.getFaces();
 }
 
 std::vector<std::shared_ptr<GLMeshBase>> Importer::getMeshes() {

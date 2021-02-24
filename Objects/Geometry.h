@@ -12,6 +12,9 @@
 #include "GLMesh/GLMeshBase.h"
 
 class Geometry  : public std::vector<std::shared_ptr<GLMeshBase>>{
+    virtual void test();
+public:
+    void initialize();
 };
 
 

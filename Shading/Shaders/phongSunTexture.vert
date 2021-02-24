@@ -30,7 +30,7 @@ void main()
 
     mat3 toTangentSpaceTransformation = inverse(mat3(tangent,biTangent,normal));
     TangentFragmentPosition = toTangentSpaceTransformation * FragmentPosition;
-    TangentLightPosition = toTangentSpaceTransformation * vec3(0,2,2);
+    TangentLightPosition = toTangentSpaceTransformation * sunPos;
 
     //toTangentSpaceTransformation * vec3(0,0,1);
     TangentViewPosition = toTangentSpaceTransformation * vec3(0,0,1);

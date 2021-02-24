@@ -6,7 +6,6 @@
 #include "GLMeshBase.h"
 
 void GLMeshBase::setupMesh() {
-    position = glm::scale(position,glm::vec3(0.7)); //TODO should not be here, just for testing
     glData.setup();
     glData.bindVAO();
 
@@ -28,7 +27,7 @@ void GLMeshBase::makeVertices() {
     pushVertexData();
     setVertexPositions();
     setVertexNormals();
-    setMaterial();
+    setSpecifics();
 }
 
 
@@ -52,32 +51,9 @@ void GLMeshBase::initialize() {
     setupMesh();
 }
 
-void GLMeshBase::print() {
-    int i = 0;
-    for(float f : vertices){
-        std::cout << f << " ";
-        i++;
-        if(i == vertexSize()){
-            i = 0;
-            std::cout << std::endl;
-        }
-    }
-}
-
-void GLMeshBase::bind() {
-    glData.bindVAO();
-}
-
-unsigned int GLMeshBase::getSize() {
-    return faceIndices.size();
-}
-
-glm::mat4 GLMeshBase::getPosition() {
-    position = glm::rotate(position,0.01f,glm::vec3(0.0,1,0.0)); //TODO just for testing
-    return position;
-}
 
 void GLMeshBase::draw() {
+    glData.bindVAO();
     drawSetup();
     glDrawElements(GL_TRIANGLES, faceIndices.size(), GL_UNSIGNED_INT, 0);
 }

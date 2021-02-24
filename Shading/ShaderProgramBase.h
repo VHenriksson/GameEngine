@@ -15,8 +15,10 @@ class ShaderProgramBase {
     std::string source;
     int vertexShader;
     int fragmentShader;
+    void testProgramLinked();
 protected:
     unsigned int shaderID = glCreateProgram();
+    virtual unsigned int getUniform(const char* name);
     ShaderVariableList var;
 public:
     explicit ShaderProgramBase(std::string shaderSource);
@@ -24,7 +26,6 @@ public:
     void createVertexShader();
     void testShaderCompilation(unsigned int shader);
     void createFragmentShader();
-    virtual void setSpecifics() = 0;
 };
 
 

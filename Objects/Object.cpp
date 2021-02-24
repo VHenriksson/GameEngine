@@ -6,10 +6,6 @@
 
 
 
-std::shared_ptr<Geometry> Object::getGeometry() {
-    return geometry;
-}
-
 void Object::draw() {
     setupDraw();
     for(std::shared_ptr<GLMeshBase> mesh : *geometry){

@@ -17,12 +17,10 @@ private:
     glm::vec3 sunPosition;
     std::shared_ptr<PhongShadedObject> balls;
     std::shared_ptr<TexturePhongShader> mainShader;
+    float t = 0;
 protected:
-    void shaderSettings(std::shared_ptr<ShaderProgramBase> shader) override;
+    void updateSceneGlobals() override;
     void setObjects() override;
-public:
-    TestScene();
-
 };
 
 
