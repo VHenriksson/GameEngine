@@ -21,6 +21,7 @@ protected:
     virtual void updateSceneGlobals() = 0;
     virtual void setObjects() = 0;
     void setShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProgramBase> shader);
+    void removeFromShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProgramBase> shader);
 public:
     void draw();
     void load();

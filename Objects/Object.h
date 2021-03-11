@@ -20,6 +20,7 @@ public:
     virtual void setShader(std::shared_ptr<ShaderProgramBase> shader) = 0;
     void draw();
     virtual void setupDraw() = 0;
+    virtual void setupForMesh(std::shared_ptr<GLMeshBase> mesh) = 0;
 };
 
 

@@ -57,6 +57,14 @@ size_t Material::getID() {
     return source.id;
 }
 
+glm::vec3 Material::getPhongVector() {
+    return phongVector;
+}
+
+int Material::getShininess() {
+    return shininess;
+}
+
 std::string aiStringToString(aiString s){
     std::string returnString;
     for(int i = 0; i < s.length; i++){

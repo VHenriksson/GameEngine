@@ -90,6 +90,18 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/GameEngine.h">
 			<Option target="GameEngine"/>
 		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.h">
+			<Option target="GameEngine"/>
+		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
@@ -156,10 +168,34 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.h">
 			<Option target="GameEngine"/>
 		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.h">
+			<Option target="GameEngine"/>
+		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.cpp">
@@ -190,6 +226,12 @@
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/PhongShader.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp">

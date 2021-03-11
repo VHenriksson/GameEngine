@@ -38,6 +38,7 @@ public:
     void initialize();
     void setupMesh();
     void draw();
+    void setShader(std::shared_ptr<ShaderProgramBase> shader);
     virtual void drawSetup() = 0;
     std::shared_ptr<ShaderProgramBase> shader;
 private:

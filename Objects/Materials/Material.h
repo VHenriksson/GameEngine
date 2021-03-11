@@ -40,13 +40,10 @@ struct materialSource{
 
 class Material {
     std::string id;
-    glm::vec3 ambientColour;
-    glm::vec3 diffuseColour;
-    glm::vec3 specularColour;
-    glm::vec3 specularConstant;
+    glm::vec3 phongVector = glm::vec3(0.4,0.7,0.7);
+    int shininess = 3;
     unsigned int colourTextureReference;
     unsigned int normalTextureReference;
-    unsigned int bumpMapReference;
     materialSource source;
 public:
     Material(aiMaterial* material);
@@ -54,7 +51,8 @@ public:
     size_t getID();
     void load();
     void bind();
-
+    glm::vec3 getPhongVector();
+    int getShininess();
 };
 
 

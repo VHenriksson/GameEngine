@@ -58,5 +58,9 @@ void GLMeshBase::draw() {
     glDrawElements(GL_TRIANGLES, faceIndices.size(), GL_UNSIGNED_INT, 0);
 }
 
+void GLMeshBase::setShader(std::shared_ptr<ShaderProgramBase> shader) {
+    this->shader = shader;
+}
+
 
 

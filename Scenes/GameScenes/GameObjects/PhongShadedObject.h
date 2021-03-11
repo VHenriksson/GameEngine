@@ -10,6 +10,9 @@
 #include "../../../Objects/PhongShadedGeometry.h"
 #include "../../../Shading/TexturePhongShader.h"
 
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/gtx/rotate_vector.hpp>
+
 class PhongShadedObject : public Object {
 private:
     glm::mat4 position;
@@ -17,6 +20,7 @@ private:
 public:
     PhongShadedObject(std::shared_ptr<Geometry> geometry);
     void setupDraw() override;
+    void setupForMesh(std::shared_ptr<GLMeshBase> mesh) override;
     void setPosition(glm::mat4 position);
     void setShader(std::shared_ptr<ShaderProgramBase> shader) override;
 };

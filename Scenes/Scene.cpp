@@ -53,5 +53,12 @@ void Scene::setShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProg
     object->setShader(shader);
 }
 
+void Scene::removeFromShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProgramBase> shader) {
+    if(!renderList.shaderSet(shader)){
+        throw std::runtime_error("Trying to remove object from shader which has not been set.");
+    }
+    renderList.remove(object,shader);
+}
+
 
 

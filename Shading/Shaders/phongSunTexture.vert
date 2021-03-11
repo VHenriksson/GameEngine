@@ -12,25 +12,27 @@ out vec3 TangentViewPosition;
 out vec3 TangentFragmentPosition;
 
 uniform vec3 sunPos;
-uniform mat4 transform;
+uniform mat4 model;
+uniform mat4 world;
 
 void main()
 {
+    mat4 transform = world*model;
     FragmentPosition = vec3(transform*vec4(vec3(inVertex),1));
    // Normal = mat3(transpose(inverse(transform))) * inNormal;
     //    gl_Position = transform * vec4( inVertex, 1 );
     mat3 normalMatrix = transpose(inverse(mat3(transform)));
-    normalMatrix = mat3(1,0,0,0,1,0,0,0,-1) * normalMatrix;
+    normalMatrix = mat3(1,0,0,0,1,0,0,0,1) * normalMatrix;
     gl_Position = transform*vec4( inVertex, 1 );
     TextureCoordinate = inTexture;
 
     vec3 normal = normalize(normalMatrix*inNormal);
-    vec3 tangent = -normalize(normalMatrix*inTangent);
+    vec3 tangent = normalize(normalMatrix*inTangent);
     vec3 biTangent = cross(normal,tangent);//-normalize(normalMatrix*inBitangent);
 
     mat3 toTangentSpaceTransformation = inverse(mat3(tangent,biTangent,normal));
     TangentFragmentPosition = toTangentSpaceTransformation * FragmentPosition;
-    TangentLightPosition = toTangentSpaceTransformation * sunPos;
+    TangentLightPosition = toTangentSpaceTransformation * mat3(world) * sunPos;
 
     //toTangentSpaceTransformation * vec3(0,0,1);
     TangentViewPosition = toTangentSpaceTransformation * vec3(0,0,1);

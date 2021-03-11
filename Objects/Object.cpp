@@ -9,6 +9,7 @@
 void Object::draw() {
     setupDraw();
     for(std::shared_ptr<GLMeshBase> mesh : *geometry){
+        setupForMesh(mesh);
         mesh->draw();
     }
 }
