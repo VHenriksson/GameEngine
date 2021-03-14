@@ -65,4 +65,3 @@ void InputManagerBase::checkKeyPressed() {//Select surfaces based on key press
 bool InputManagerBase::getQuitStatus() {
     return shouldQuit;
 }
-
