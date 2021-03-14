@@ -6,17 +6,19 @@
 #include <stdexcept>
 #include <fstream>
 #include <sstream>
+#include <iostream>
 #include "ShaderLoader.h"
-std::string ShaderLoader::load(std::string source) {
+const char* ShaderLoader::load(std::string source) {
     std::string shader;
-    std::string fullSource = source;
+    std::string fullSource = "../Shading/Shaders/" + source;
     std::fstream readFile(fullSource, std::ios::in);
     if (readFile.is_open()){
         std::stringstream buffer;
         buffer << readFile.rdbuf();
-        shader = buffer.str() + "\0";
+        shader = buffer.str();
     } else {
-        throw std::runtime_error( "Couldn't load shader file: " + fullSource);
+        throw std::runtime_error( "Couldn't load shader file: " + source);
     }
-    return shader;
+    std::cout << shader << std::endl;
+    return shader.c_str();
 }

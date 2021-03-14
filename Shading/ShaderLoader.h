@@ -8,7 +8,7 @@
 
 class ShaderLoader {
 public:
-    static std::string load(std::string source);
+    static const char* load(std::string source);
 };
 
 

@@ -10,17 +10,24 @@
 
 class InputManagerBase {
 protected:
+    bool shouldQuit;
     SDL_Event event;
-    virtual void handleQUIT() = 0;
-    virtual void handleUP() = 0;
-    virtual void handleDOWN() = 0;
-    virtual void handleRIGHT() = 0;
-    virtual void handleLEFT() = 0;
-    virtual void handleLEFT_ROTATE() = 0;
-    virtual void handleRIGHT_ROTATE() = 0;
+    unsigned int keyDown = 0;
+    virtual void handleQUIT(){};
+    virtual void handleUP(){};
+    virtual void handleDOWN(){};
+    virtual void handleRIGHT(){};
+    virtual void handleLEFT(){};
+    virtual void handleLEFT_ROTATE(){};
+    virtual void handleRIGHT_ROTATE(){};
+    virtual void handleSPACE(){};
 public:
     void handleInputs();
+    bool getQuitStatus();
 
+    void checkKeyPressed();
+
+    void doKeyMethod();
 };
 
 

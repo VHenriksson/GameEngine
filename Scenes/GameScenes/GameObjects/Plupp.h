@@ -14,7 +14,6 @@
 class Plupp : public PhongShadedObject {
 private:
     glm::mat4 position = glm::mat4(1.0f);
-    std::list<glm::mat4> positionChain;
 public:
     Plupp(std::shared_ptr<Geometry> geometry);
     Plupp(std::shared_ptr<Geometry> geometry,glm::mat4 position);

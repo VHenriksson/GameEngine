@@ -90,16 +90,25 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/GameEngine.h">
 			<Option target="GameEngine"/>
 		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/GamePart.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/GamePartBase.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/GamePartBase.h">
+			<Option target="GameEngine"/>
+		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h">
 			<Option target="GameEngine"/>
 		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.cpp">
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.h">
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.cpp">
@@ -141,6 +150,9 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Importer.h">
 			<Option target="GameEngine"/>
 		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h">
+			<Option target="GameEngine"/>
+		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
@@ -159,13 +171,16 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h">
 			<Option target="GameEngine"/>
 		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/TextureList.h">
-			<Option target="GameEngine"/>
-		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.h">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.cpp">
+			<Option target="GameEngine"/>
+		</Unit>
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.cpp">
@@ -198,10 +213,10 @@
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h">
 			<Option target="GameEngine"/>
 		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.cpp">
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.cpp">
 			<Option target="GameEngine"/>
 		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.h">
+		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.cpp">
@@ -214,18 +229,6 @@
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/Scene.h">
-			<Option target="GameEngine"/>
-		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.cpp">
-			<Option target="GameEngine"/>
-		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.h">
-			<Option target="GameEngine"/>
-		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.cpp">
-			<Option target="GameEngine"/>
-		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/PhongShader.cpp">
@@ -244,12 +247,6 @@
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h">
-			<Option target="GameEngine"/>
-		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.cpp">
-			<Option target="GameEngine"/>
-		</Unit>
-		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h">
 			<Option target="GameEngine"/>
 		</Unit>
 		<Unit filename="/home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp">

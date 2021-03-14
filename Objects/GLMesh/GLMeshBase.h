@@ -31,6 +31,11 @@ struct glContainer {
     void bindVBO(){
         glBindBuffer(GL_ARRAY_BUFFER, vbo);
     };
+    void remove(){
+        glDeleteBuffers(1,&vbo);
+        glDeleteBuffers(1,&ebo);
+        glDeleteVertexArrays(1,&vao);
+    }
 };
 
 class GLMeshBase {
@@ -41,6 +46,7 @@ public:
     void setShader(std::shared_ptr<ShaderProgramBase> shader);
     virtual void drawSetup() = 0;
     std::shared_ptr<ShaderProgramBase> shader;
+    ~GLMeshBase();
 private:
     glContainer glData;
     glm::mat4 position = glm::mat4(1.0f);

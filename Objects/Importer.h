@@ -14,18 +14,16 @@
 #include "GLMesh/GLMeshBase.h"
 #include "GLMesh/GLMeshTexture.h"
 #include "GLMesh/GLMeshColour.h"
-#include "TextureList.h"
+#include "MaterialList.h"
 
 
 class Importer {
     const aiScene *scene;
     std::vector<std::shared_ptr<GLMeshBase>> meshes;
     std::vector<GLMeshTexture> textureMeshes;
-
     void processNode(aiNode *node);
-
     void processMeshes(const aiNode *node);
-
+    void addTextureMesh(aiMesh *mesh);
 public:
     Importer(std::string source);
     std::vector<std::shared_ptr<GLMeshBase>> getMeshes();

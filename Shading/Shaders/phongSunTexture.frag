@@ -17,10 +17,8 @@ uniform sampler2D normalTexture;
 void main() {
     vec3 normal = texture(normalTexture, TextureCoordinate).rgb;
     normal = normalize(normal * 2.0 - 1.0);
-    //vec3 normal = vec3(0,0,1);
-//    vec3 phongVector = vec3(0.3,0.7,1);
     vec4 color = texture(Texture,TextureCoordinate);
-    vec4 ambientLightColor = vec4(1,1,1,1);//vec4(normalOffset,1);
+    vec4 ambientLightColor = vec4(1,1,1,1);
 
     // Calculation of ambient light
     vec4 sunLightColor = vec4(1,1,1,1);
@@ -37,7 +35,5 @@ void main() {
     float spec = pow(max(dot(reflectionDirection,viewDirection),0),shininess);
     vec4 specularLight = phongVector[2] * spec * sunLightColor;
 
-    //FragColor = vec4(TangentViewPosition,1);
-    //FragColor = vec4(TangentFragmentPosition,1);
     FragColor = (specularLight + diffuseLight + ambientLight) * color;
 }

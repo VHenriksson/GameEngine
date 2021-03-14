@@ -29,28 +29,22 @@ Material::Material(materialSource material) {
 }
 
 void Material::load() {
+    generateTexture(&colourTextureReference, source.diffuseTexture);
+    generateTexture(&normalTextureReference, source.normalTexture);
+}
+
+void Material::generateTexture(unsigned int *reference, std::string source) {
     int width;
     int height;
     int nrOfChannels;
-    std::string fullPath = "/home/viktor/CLionProjects/GameEngine/" + source.diffuseTexture + ".jpg";
-    unsigned char* data = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
-    glGenTextures(1, &colourTextureReference);
-    glBindTexture(GL_TEXTURE_2D, colourTextureReference);
+    unsigned char *data;
+    std::string fullPath= "/home/viktor/CLionProjects/GameEngine/" + source + ".jpg";
+    data= stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
+    glGenTextures(1, reference);
+    glBindTexture(GL_TEXTURE_2D, *reference);
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
     glGenerateMipmap(GL_TEXTURE_2D);
     stbi_image_free((void *) data);
-    std::cout << "Material created with id " << colourTextureReference << std::endl;
-    std::cout << "Material loaded with " << source.diffuseTexture << std::endl;
-
-    fullPath = "/home/viktor/CLionProjects/GameEngine/" + source.normalTexture + ".jpg";
-    unsigned char* normalData = stbi_load(&fullPath[0], &width, &height, &nrOfChannels, 0);
-    glGenTextures(1, &normalTextureReference);
-    glBindTexture(GL_TEXTURE_2D, normalTextureReference);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, normalData);
-    glGenerateMipmap(GL_TEXTURE_2D);
-    stbi_image_free((void *) data);
-    std::cout << "Normals created with id " << normalTextureReference << std::endl;
-    std::cout << "Material loaded with " << source.normalTexture << std::endl;
 }
 
 size_t Material::getID() {
@@ -63,6 +57,11 @@ glm::vec3 Material::getPhongVector() {
 
 int Material::getShininess() {
     return shininess;
+}
+
+Material::~Material() {
+    glDeleteTextures(1,&colourTextureReference);
+    glDeleteTextures(1,&normalTextureReference);
 }
 
 std::string aiStringToString(aiString s){

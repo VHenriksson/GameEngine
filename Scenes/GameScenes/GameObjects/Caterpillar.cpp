@@ -44,10 +44,9 @@ std::shared_ptr<Object> Caterpillar::getEnd() {
 }
 
 bool Caterpillar::testCollisson() {
-    glm::vec3 headPosition = getHeadPosition();
     for(int i = 1; i < this->size(); i++){
         glm::vec3 pluppPosition = glm::mat3(this->at(i)->getPosition()) * glm::vec3(0,1,0);
-        double closeness = glm::dot(headPosition,-glm::normalize(pluppPosition));
+        double closeness = glm::dot(getHeadPosition(),glm::normalize(pluppPosition));
         if ( closeness > 0.99 ){
             return true;
         }
@@ -69,6 +68,6 @@ std::shared_ptr<Plupp> Caterpillar::getHead() {
 }
 
 glm::vec3 Caterpillar::getHeadPosition() {
-    return head->getPosition() * glm::vec4(0,1,0,1);
+    return glm::normalize(glm::vec3(head->getPosition() * glm::vec4(0,1,0,1)));
 }
 

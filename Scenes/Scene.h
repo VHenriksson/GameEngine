@@ -6,8 +6,7 @@
 #define GAMEENGINE_SCENE_H
 
 
-#include "SceneGeometries.h"
-#include "ShaderProgramList.h"
+#include "GeometryList.h"
 #include "RenderingList.h"
 
 class Scene {
@@ -15,17 +14,16 @@ private:
     void loadTextures();
 protected:
     RenderingList renderList;
-    TextureList materials;
-    SceneGeometries geometries;
+    MaterialList materials;
+    GeometryList geometries;
     glm::vec4 backgroundColour;
-    virtual void updateSceneGlobals() = 0;
-    virtual void setObjects() = 0;
+    virtual void tickScene() = 0;
+    virtual void setScene() = 0;
     void setShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProgramBase> shader);
     void removeFromShader(std::shared_ptr<Object> object, std::shared_ptr<ShaderProgramBase> shader);
 public:
     void draw();
     void load();
-
 };
 
 

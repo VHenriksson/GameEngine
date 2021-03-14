@@ -62,5 +62,9 @@ void GLMeshBase::setShader(std::shared_ptr<ShaderProgramBase> shader) {
     this->shader = shader;
 }
 
+GLMeshBase::~GLMeshBase() {
+    glData.remove();
+}
+
 
 

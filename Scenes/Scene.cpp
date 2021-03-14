@@ -24,7 +24,7 @@ void Scene::loadTextures() {
 }
 
 void Scene::load() {
-    setObjects();
+    setScene();
     loadTextures();
     for(std::pair<size_t, std::shared_ptr<Geometry>> pair : geometries){
         std::shared_ptr<Geometry> geometry = pair.second;
@@ -35,7 +35,7 @@ void Scene::load() {
 void Scene::draw() {
     glClearColor(backgroundColour[0],backgroundColour[1],backgroundColour[2],backgroundColour[3]);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    updateSceneGlobals();
+    tickScene();
     for(std::pair<std::shared_ptr<ShaderProgramBase>,std::pair<std::shared_ptr<ShaderProgramBase>,std::set<std::shared_ptr<Object>>>> pair : renderList){
         std::shared_ptr<ShaderProgramBase> shader = pair.second.first;
         shader->use();

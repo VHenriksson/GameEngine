@@ -16,7 +16,6 @@
 //unsigned int MAIN_SHADER_OBJECT_POSITION;
 
 class TexturePhongShader : public PhongShader {
-    glm::vec3 sunPos = glm::vec3(3,3,-100);
     float t = 0;
     unsigned int sunPosition;
     unsigned int objectPosition;
@@ -26,8 +25,6 @@ public:
     void setObjectPosition(glm::mat4 positioner);
     void setWorldPosition(glm::mat4 positioner);
     TexturePhongShader();
-    explicit TexturePhongShader(std::string name);
-
 };
 
 

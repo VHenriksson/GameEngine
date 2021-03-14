@@ -4,8 +4,10 @@
 CMakeFiles/GameEngine.dir/GameEngine.cpp.o
  /home/viktor/CLionProjects/GameEngine/GameEngine.cpp
  /home/viktor/CLionProjects/GameEngine/GameEngine.h
+ /home/viktor/CLionProjects/GameEngine/GamePart.h
+ /home/viktor/CLionProjects/GameEngine/GamePartBase.h
  /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h
- /home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.h
+ /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
@@ -13,33 +15,28 @@ CMakeFiles/GameEngine.dir/GameEngine.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
- /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.h
- /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.h
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLwindow.h
-CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o
- /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.cpp
+CMakeFiles/GameEngine.dir/GamePartBase.cpp.o
+ /home/viktor/CLionProjects/GameEngine/GamePartBase.cpp
+ /home/viktor/CLionProjects/GameEngine/GamePartBase.h
  /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h
-CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o
- /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h
- /home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.cpp
- /home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
@@ -47,36 +44,53 @@ CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Object.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
+ /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
+CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o
+ /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.cpp
+ /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h
+CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.o
+ /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h
+ /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.cpp
+ /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
- /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.h
- /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshBase.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshColour.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.cpp
@@ -85,13 +99,11 @@ CMakeFiles/GameEngine.dir/Objects/GLMesh/GLMeshTexture.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/GLMesh/ImportedMesh.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
@@ -101,10 +113,9 @@ CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
@@ -113,10 +124,9 @@ CMakeFiles/GameEngine.dir/Objects/Importer.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/Materials/Material.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.cpp
@@ -130,12 +140,11 @@ CMakeFiles/GameEngine.dir/Objects/Object.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
@@ -144,7 +153,6 @@ CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
@@ -153,12 +161,36 @@ CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.cpp
  /home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
+CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.o
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
+ /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
+ /home/viktor/CLionProjects/GameEngine/Objects/Object.h
+ /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.cpp
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
+ /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
+ /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
+ /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
@@ -167,17 +199,16 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.cpp
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
@@ -187,16 +218,15 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.cpp
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
@@ -206,15 +236,14 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
@@ -224,16 +253,15 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.cpp
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
@@ -243,18 +271,17 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
  /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.cpp
  /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
-CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o
+CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
@@ -262,25 +289,13 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
- /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.cpp
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.h
- /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
- /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
- /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.h
- /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h
- /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
+ /home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.cpp
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
- /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
@@ -289,13 +304,12 @@ CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.cpp
  /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
@@ -304,62 +318,26 @@ CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
  /home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/Scene.cpp
  /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
- /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.h
- /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h
- /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
- /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
-CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/ImportedMesh.h
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
- /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
- /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
- /home/viktor/CLionProjects/GameEngine/Objects/Object.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
- /home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.cpp
- /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
-CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
- /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.cpp
- /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h
- /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
- /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.cpp
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.cpp
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
 CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
- /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.cpp
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
-CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o
- /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.cpp
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
 CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshTexture.h
@@ -368,7 +346,6 @@ CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.cpp
  /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
 CMakeFiles/GameEngine.dir/WindowHandling/GLContext.cpp.o
@@ -380,6 +357,8 @@ CMakeFiles/GameEngine.dir/WindowHandling/GLwindow.cpp.o
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLwindow.h
 CMakeFiles/GameEngine.dir/main.cpp.o
  /home/viktor/CLionProjects/GameEngine/GameEngine.h
+ /home/viktor/CLionProjects/GameEngine/GamePart.h
+ /home/viktor/CLionProjects/GameEngine/GamePartBase.h
  /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshBase.h
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/GLMeshColour.h
@@ -388,25 +367,13 @@ CMakeFiles/GameEngine.dir/main.cpp.o
  /home/viktor/CLionProjects/GameEngine/Objects/GLMesh/hashFunction.h
  /home/viktor/CLionProjects/GameEngine/Objects/Geometry.h
  /home/viktor/CLionProjects/GameEngine/Objects/Importer.h
+ /home/viktor/CLionProjects/GameEngine/Objects/MaterialList.h
  /home/viktor/CLionProjects/GameEngine/Objects/Materials/Material.h
  /home/viktor/CLionProjects/GameEngine/Objects/Object.h
- /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.h
- /home/viktor/CLionProjects/GameEngine/Objects/TextureList.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.h
- /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.h
+ /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.h
  /home/viktor/CLionProjects/GameEngine/Scenes/Scene.h
- /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.h
- /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.h
- /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderLoader.h
  /home/viktor/CLionProjects/GameEngine/Shading/ShaderProgramBase.h
- /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.h
- /home/viktor/CLionProjects/GameEngine/Shading/TexturePhongShader.h
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLContext.h
  /home/viktor/CLionProjects/GameEngine/WindowHandling/GLwindow.h
  /home/viktor/CLionProjects/GameEngine/main.cpp

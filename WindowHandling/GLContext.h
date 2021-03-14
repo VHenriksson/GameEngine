@@ -12,8 +12,16 @@ private:
     SDL_GLContext glContext;
 public:
     explicit GLContext(SDL_Window* window);
-    GLContext();
+//    GLContext();
     ~GLContext();
+
+    void setSDLAttributes() const;
+
+    void createGLContext(SDL_Window *window);
+
+    void initialzeGlew() const;
+
+    void setupSync() const;
 };
 
 

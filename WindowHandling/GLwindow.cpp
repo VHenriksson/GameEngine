@@ -10,8 +10,8 @@ GLwindow::GLwindow() {
 
 void GLwindow::setup() {
     try {
-        initialize();
-        init();
+        initializeSDLVideo();
+        createSDLWindow();
         createGLContext();
     } catch (std::exception& e) {
         throw std::runtime_error("Failed to start SDL-Runner!\n" + std::string(e.what()));
@@ -19,7 +19,7 @@ void GLwindow::setup() {
 }
 
 
-void GLwindow::initialize() {
+void GLwindow::initializeSDLVideo() {
     if(SDL_Init(SDL_INIT_VIDEO ) < 0 )
     {
         throw std::runtime_error("SDL could not initialize! SDL_Error: " + std::string(SDL_GetError()));
@@ -37,9 +37,8 @@ GLwindow::GLwindow(int screenWidth, int screenHeight) {
 }
 
 
-void GLwindow::init() {
+void GLwindow::createSDLWindow() {
     window = SDL_CreateWindow("TITLE", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, screenHeight, screenWidth, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
-
     if (window == NULL)
     {
         throw std::runtime_error("GLwindow could not be created! SDL_Error: " + std::string(SDL_GetError()));
@@ -47,14 +46,12 @@ void GLwindow::init() {
 }
 
 GLwindow::~GLwindow() {
-    delete context;
     SDL_DestroyWindow( window );
     SDL_Quit();
 }
 
 void GLwindow::createGLContext() {
-    context = new GLContext(window);
-    std::cout << "Deleted here?" << std::endl;
+    context = std::make_shared<GLContext>(window);
 }
 
 

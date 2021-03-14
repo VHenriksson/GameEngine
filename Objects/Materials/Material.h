@@ -45,7 +45,9 @@ class Material {
     unsigned int colourTextureReference;
     unsigned int normalTextureReference;
     materialSource source;
+    void generateTexture(unsigned int *reference, std::string source);
 public:
+    ~Material();
     Material(aiMaterial* material);
     Material(materialSource material);
     size_t getID();

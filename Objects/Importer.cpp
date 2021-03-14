@@ -8,9 +8,10 @@
 
 
 Importer::Importer(std::string source) {
+    std::string fullsource = "../Models/" + source;
     Assimp::Importer importer;
 
-    scene = importer.ReadFile(source,aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
+    scene = importer.ReadFile(fullsource,aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
 
     if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode){
         throw std::runtime_error("Could not load model\nAssimp error: " + std::string(importer.GetErrorString()) + "\n");
@@ -34,15 +35,19 @@ void Importer::processMeshes(const aiNode *node) {
     {
         aiMesh *mesh = scene->mMeshes[node->mMeshes[i]];
         if (mesh->mTextureCoords[0]) {
-            GLMeshTexture textureMesh = GLMeshTexture(mesh);
-            aiMaterial *material = scene->mMaterials[mesh->mMaterialIndex];
-            std::shared_ptr<Material> pointerToMaterial = std::make_shared<Material>(Material(material));
-            textureMesh.setMaterial(pointerToMaterial);
-            meshes.push_back(std::make_shared<GLMeshTexture>(textureMesh));
+            addTextureMesh(mesh);
         } else {
-            meshes.push_back(std::make_shared<GLMeshColour>(mesh));
+            meshes.push_back(std::make_shared<GLMeshColour>(mesh)); //TODO Implement
         }
     }
+}
+
+void Importer::addTextureMesh(aiMesh *mesh) {
+    GLMeshTexture textureMesh = GLMeshTexture(mesh);
+    aiMaterial *material = scene->mMaterials[mesh->mMaterialIndex];
+    std::shared_ptr<Material> pointerToMaterial = std::make_shared<Material>(Material(material));
+    textureMesh.setMaterial(pointerToMaterial);
+    meshes.push_back(std::make_shared<GLMeshTexture>(textureMesh));
 }
 
 std::vector<std::shared_ptr<GLMeshBase>> Importer::getMeshes() {

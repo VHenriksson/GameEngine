@@ -7,15 +7,8 @@
 
 
 
-TexturePhongShader::TexturePhongShader(std::string name) : PhongShader(name) {
-    use();
-    glUniform1i(glGetUniformLocation(shaderID,"Texture"),0);
-    glUniform1i(glGetUniformLocation(shaderID,"normalTexture"),1);
-    sunPosition = glGetUniformLocation(shaderID, "sunPos");
-    objectPosition = glGetUniformLocation(shaderID, "position");
-}
 
-TexturePhongShader::TexturePhongShader() : PhongShader("/home/viktor/CLionProjects/GameEngine/Shading/Shaders/phongSunTexture") {
+TexturePhongShader::TexturePhongShader() : PhongShader("phongSunTexture") {
     use();
     glUniform1i(glGetUniformLocation(shaderID,"Texture"),0);
     glUniform1i(glGetUniformLocation(shaderID,"normalTexture"),1);

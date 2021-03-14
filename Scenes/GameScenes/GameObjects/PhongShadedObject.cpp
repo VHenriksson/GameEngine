@@ -30,7 +30,7 @@ void PhongShadedObject::setPosition(glm::mat4 position) {
 void PhongShadedObject::setupForMesh(std::shared_ptr<GLMeshBase> mesh) {
     std::shared_ptr<GLMeshTexture> texMesh =  std::dynamic_pointer_cast<GLMeshTexture>(mesh);
     if(!this->shader){
-        throw std::runtime_error("A mesh is not a texture mesh");
+        throw std::runtime_error("Trying to shade a non-textured mesh with a texture shader");
     }
     std::shared_ptr<Material> material = texMesh->getMaterial();
     shader->setPhongDetails(material->getPhongVector(),material->getShininess());

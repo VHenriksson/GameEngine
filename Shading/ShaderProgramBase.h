@@ -7,7 +7,6 @@
 
 
 #include <string>
-#include "ShaderVariableList.h"
 #include <glm/gtc/type_ptr.hpp>
 #include <GL/glew.h>
 
@@ -16,16 +15,18 @@ class ShaderProgramBase {
     int vertexShader;
     int fragmentShader;
     void testProgramLinked();
+    void createShader(int& shaderReference, unsigned int type);
+    void testShaderCompilation(unsigned int shader);
+    const char *getSourceCode(unsigned int type);
+    void handleCompilationError(unsigned int shader, char *errorLog) const;
+    void handleLinkingError() const;
 protected:
     unsigned int shaderID = glCreateProgram();
     virtual unsigned int getUniform(const char* name);
-    ShaderVariableList var;
 public:
     explicit ShaderProgramBase(std::string shaderSource);
+    ~ShaderProgramBase();
     void use();
-    void createVertexShader();
-    void testShaderCompilation(unsigned int shader);
-    void createFragmentShader();
 };
 
 

@@ -10,17 +10,16 @@
 #include "Scenes/Scene.h"
 #include "WindowHandling/GLwindow.h"
 #include "InputManager/InputManagerBase.h"
+#include "GamePart.h"
 
 class GameEngine {
 private:
     GLwindow window = GLwindow(1000,1000);
-    void tryRun();
-    bool endCurrentScene = false;
-    std::shared_ptr<Scene> currentScene;
-    std::shared_ptr<InputManagerBase> currentInputManager;
-    void runScene();
+    void run(GamePartBase part);
 public:
     GameEngine();
+
+    void runLoop(GamePartBase part);
 };
 
 

@@ -259,18 +259,18 @@ CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Scenes/Scene.cpp -o CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.s
 
-CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o: ../Scenes/GameScenes/TestScene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.cpp
+CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.o: ../Scenes/GameScenes/CaterpillarScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.cpp
 
-CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.cpp > CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.i
+CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.cpp > CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.i
 
-CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/TestScene.cpp -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.s
+CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/CaterpillarScene.cpp -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.s
 
 CMakeFiles/GameEngine.dir/Objects/Object.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Objects/Object.cpp.o: ../Objects/Object.cpp
@@ -285,48 +285,22 @@ CMakeFiles/GameEngine.dir/Objects/Object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Objects/Object.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Objects/Object.cpp -o CMakeFiles/GameEngine.dir/Objects/Object.cpp.s
 
-CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o: ../Scenes/SceneGeometries.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.cpp
+CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.o: ../Scenes/GeometryList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.cpp
 
-CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.cpp > CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.i
+CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.cpp > CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.i
 
-CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Scenes/SceneGeometries.cpp -o CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.s
-
-CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o: ../Scenes/ShaderProgramList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.cpp
-
-CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.cpp > CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.i
-
-CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Scenes/ShaderProgramList.cpp -o CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.s
-
-CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o: ../Shading/ShaderVariableList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o -c /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.cpp
-
-CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.cpp > CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.i
-
-CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Shading/ShaderVariableList.cpp -o CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.s
+CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Scenes/GeometryList.cpp -o CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.s
 
 CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o: ../Scenes/RenderingList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/RenderingList.cpp
 
 CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.i: cmake_force
@@ -339,7 +313,7 @@ CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.s: cmake_force
 
 CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o: ../Objects/Geometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o -c /home/viktor/CLionProjects/GameEngine/Objects/Geometry.cpp
 
 CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.i: cmake_force
@@ -352,7 +326,7 @@ CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.s: cmake_force
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o: ../Scenes/GameScenes/GameObjects/PhongShadedObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.i: cmake_force
@@ -365,7 +339,7 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.s:
 
 CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o: ../Objects/PhongShadedGeometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o -c /home/viktor/CLionProjects/GameEngine/Objects/PhongShadedGeometry.cpp
 
 CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.i: cmake_force
@@ -378,7 +352,7 @@ CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.s: cmake_force
 
 CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o: ../Objects/TexturedGeometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o -c /home/viktor/CLionProjects/GameEngine/Objects/TexturedGeometry.cpp
 
 CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.i: cmake_force
@@ -391,7 +365,7 @@ CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.s: cmake_force
 
 CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o: ../Shading/PhongShader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o -c /home/viktor/CLionProjects/GameEngine/Shading/PhongShader.cpp
 
 CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.i: cmake_force
@@ -404,7 +378,7 @@ CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.s: cmake_force
 
 CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o: ../InputManager/InputManagerBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o -c /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.cpp
 
 CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.i: cmake_force
@@ -415,22 +389,22 @@ CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerBase.cpp -o CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.s
 
-CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o: CMakeFiles/GameEngine.dir/flags.make
-CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o: ../InputManager/TestHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o -c /home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.cpp
+CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.o: ../InputManager/InputManagerCaterpillar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.o -c /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.cpp
 
-CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.cpp > CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.i
+CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.cpp > CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.i
 
-CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/InputManager/TestHandler.cpp -o CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.s
+CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/InputManager/InputManagerCaterpillar.cpp -o CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.s
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o: ../Scenes/GameScenes/GameObjects/Planet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Planet.cpp
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.i: cmake_force
@@ -443,7 +417,7 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.s: cmake_forc
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o: ../Scenes/GameScenes/GameObjects/Plupp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Plupp.cpp
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.i: cmake_force
@@ -456,7 +430,7 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.s: cmake_force
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o: ../Scenes/GameScenes/GameObjects/Food.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Food.cpp
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.i: cmake_force
@@ -469,7 +443,7 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.s: cmake_force
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o: CMakeFiles/GameEngine.dir/flags.make
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o: ../Scenes/GameScenes/GameObjects/Caterpillar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o -c /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.cpp
 
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.i: cmake_force
@@ -479,6 +453,19 @@ CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.i: cmake
 CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/Scenes/GameScenes/GameObjects/Caterpillar.cpp -o CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.s
+
+CMakeFiles/GameEngine.dir/GamePartBase.cpp.o: CMakeFiles/GameEngine.dir/flags.make
+CMakeFiles/GameEngine.dir/GamePartBase.cpp.o: ../GamePartBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/GameEngine.dir/GamePartBase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GameEngine.dir/GamePartBase.cpp.o -c /home/viktor/CLionProjects/GameEngine/GamePartBase.cpp
+
+CMakeFiles/GameEngine.dir/GamePartBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameEngine.dir/GamePartBase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktor/CLionProjects/GameEngine/GamePartBase.cpp > CMakeFiles/GameEngine.dir/GamePartBase.cpp.i
+
+CMakeFiles/GameEngine.dir/GamePartBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameEngine.dir/GamePartBase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktor/CLionProjects/GameEngine/GamePartBase.cpp -o CMakeFiles/GameEngine.dir/GamePartBase.cpp.s
 
 # Object files for target GameEngine
 GameEngine_OBJECTS = \
@@ -496,11 +483,9 @@ GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o" \
 "CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o" \
 "CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.o" \
-"CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o" \
+"CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.o" \
 "CMakeFiles/GameEngine.dir/Objects/Object.cpp.o" \
-"CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o" \
-"CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o" \
-"CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o" \
+"CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.o" \
 "CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o" \
 "CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o" \
 "CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o" \
@@ -508,11 +493,12 @@ GameEngine_OBJECTS = \
 "CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o" \
 "CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o" \
 "CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o" \
-"CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o" \
+"CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.o" \
 "CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o" \
 "CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o" \
 "CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o" \
-"CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o"
+"CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o" \
+"CMakeFiles/GameEngine.dir/GamePartBase.cpp.o"
 
 # External object files for target GameEngine
 GameEngine_EXTERNAL_OBJECTS =
@@ -531,11 +517,9 @@ GameEngine: CMakeFiles/GameEngine.dir/Shading/ShaderLoader.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Shading/ShaderProgramBase.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Shading/TexturePhongShader.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Scenes/Scene.cpp.o
-GameEngine: CMakeFiles/GameEngine.dir/Scenes/GameScenes/TestScene.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/Scenes/GameScenes/CaterpillarScene.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Objects/Object.cpp.o
-GameEngine: CMakeFiles/GameEngine.dir/Scenes/SceneGeometries.cpp.o
-GameEngine: CMakeFiles/GameEngine.dir/Scenes/ShaderProgramList.cpp.o
-GameEngine: CMakeFiles/GameEngine.dir/Shading/ShaderVariableList.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/Scenes/GeometryList.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Scenes/RenderingList.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Objects/Geometry.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/PhongShadedObject.cpp.o
@@ -543,15 +527,16 @@ GameEngine: CMakeFiles/GameEngine.dir/Objects/PhongShadedGeometry.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Objects/TexturedGeometry.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Shading/PhongShader.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/InputManager/InputManagerBase.cpp.o
-GameEngine: CMakeFiles/GameEngine.dir/InputManager/TestHandler.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/InputManager/InputManagerCaterpillar.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Planet.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Plupp.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Food.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/Scenes/GameScenes/GameObjects/Caterpillar.cpp.o
+GameEngine: CMakeFiles/GameEngine.dir/GamePartBase.cpp.o
 GameEngine: CMakeFiles/GameEngine.dir/build.make
 GameEngine: /usr/lib/x86_64-linux-gnu/libGLEW.so
 GameEngine: CMakeFiles/GameEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable GameEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viktor/CLionProjects/GameEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable GameEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -13,17 +13,16 @@ class GLwindow {
 private:
     int screenWidth = 1000;
     int screenHeight = 1000;
-    GLContext* context;
+    std::shared_ptr<GLContext> context;
     void setup();
-    void init();
+    void createSDLWindow();
     void createGLContext();
     SDL_Window * window = NULL;
 public:
-    virtual void update(){};
     GLwindow();
     GLwindow(int screenWidth, int screenHeight);
     ~GLwindow();
-    void initialize();
+    void initializeSDLVideo();
     void updateWindow();
 };
 
