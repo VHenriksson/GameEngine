@@ -8,7 +8,7 @@
 
 
 Importer::Importer(std::string source) {
-    std::string fullsource = "../Models/" + source;
+    std::string fullsource = "Models/" + source;
     Assimp::Importer importer;
 
     scene = importer.ReadFile(fullsource,aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
@@ -17,7 +17,6 @@ Importer::Importer(std::string source) {
         throw std::runtime_error("Could not load model\nAssimp error: " + std::string(importer.GetErrorString()) + "\n");
     }
     processNode(scene->mRootNode);
-    std::cout << "Texture Meshes:" << std::endl;
 }
 
 void Importer::processNode(aiNode *node)
@@ -30,7 +29,6 @@ void Importer::processNode(aiNode *node)
 }
 
 void Importer::processMeshes(const aiNode *node) {
-    std::cout << "Material indices: " << std::endl;
     for(unsigned int i = 0; i < node->mNumMeshes; i++)
     {
         aiMesh *mesh = scene->mMeshes[node->mMeshes[i]];

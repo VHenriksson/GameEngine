@@ -17,7 +17,6 @@ void GLMeshTexture::setSpecifics() {
 }
 
 GLMeshTexture::GLMeshTexture(aiMesh *mesh) {
-    std::cout << "Mesh created from AI-mesh " << mesh << std::endl;
     import(mesh);
 }
 

@@ -13,7 +13,6 @@
 static std::hash<std::string> hasher;
 
 static std::size_t getHash(std::string string){
-    std::cout << string << " hashed to " << hasher(string) << std::endl;
         return hasher(string);
     }
 

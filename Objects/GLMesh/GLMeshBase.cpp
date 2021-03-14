@@ -11,7 +11,6 @@ void GLMeshBase::setupMesh() {
 
     makeVertices();
     makeFaces();
-    std::cout << "Mesh set up with vao: " << glData.vao << std::endl;
 
     // vertex positions
 
@@ -37,7 +36,6 @@ void GLMeshBase::setVertexNormals(){
 }
 
 void GLMeshBase::setVertexPositions(){
-    std::cout << "vertices set!" << std::endl;
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, vertexSize()*sizeof(float), nullptr);
     glEnableVertexAttribArray(0);
 }
